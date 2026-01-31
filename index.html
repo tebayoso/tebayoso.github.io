@@ -3,138 +3,1081 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jorge de los Santos - Software Architect, Platform Engineer, and Blockchain Developer">
+    <meta name="description" content="Jorge de los Santos - Software Architect, Platform Engineer, and Blockchain Developer. 15+ years of turning complex problems into elegant solutions.">
     <meta name="author" content="Jorge de los Santos">
+    <meta name="theme-color" content="#0a0a0a">
     <title>Jorge de los Santos | Software Architect & Blockchain Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="hero">
-            <h1>Hi, I'm Jorge de los Santos! 👋</h1>
-            <h2>Software Architect | Platform Engineer | Blockchain Developer</h2>
-            <p class="intro">
-                As a seasoned software engineer and blockchain enthusiast, I've spent years navigating the complexities of Web3 and blockchain technologies. My journey includes pivotal roles at <strong>Euler Tools</strong>, <strong>Certchain</strong>, <strong>Michelin</strong>, and <strong>Uttopion</strong>, where I've honed my skills in full-stack development, DevOps, and leading innovative tech projects.
-            </p>
-            <p class="intro">
-                My passion lies in bridging the gap between cutting-edge blockchain solutions and practical, real-world applications. I'm all about building technology that matters—technology that reshapes how we interact with the digital world. In my repositories, you'll find a mix of projects showcasing my journey in Web3, from decentralized applications (DApps) to data-driven blockchain platforms.
-            </p>
-            <p class="intro">
-                I love collaborating and am always open to connecting with like-minded enthusiasts and professionals. Feel free to reach out for collaborations or just a chat about the latest in tech!
-            </p>
-        </header>
-
-        <section class="connect">
-            <h3>🌐 Connect With Me</h3>
-            <div class="social-links">
-                <a href="https://twitter.com/intent/follow?screen_name=tebayoso" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/twitter/follow/tebayoso?label=Follow" alt="Twitter Follow">
-                </a>
-                <a href="https://www.linkedin.com/in/tebayoso/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/-tebayoso-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/tebayoso" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/github/followers/tebayoso?label=Follow&style=social" alt="GitHub followers">
-                </a>
-            </div>
-        </section>
-
-        <section class="recognition">
-            <h3>🏆 Recognition & Contributions</h3>
-            <div class="badges">
-                <a href="https://stackexchange.com/users/3008237" target="_blank" rel="noopener noreferrer">
-                    <img src="https://stackexchange.com/users/flair/3008237.png" width="208" height="58" alt="Stack Exchange Profile">
-                </a>
-                <a href="https://gitroll.io/profile/usXftipaFcIQktcXGKahLQKiAhhz2" target="_blank" rel="noopener noreferrer">
-                    <img src="https://gitroll.io/api/badges/profiles/v1/usXftipaFcIQktcXGKahLQKiAhhz2?theme=solarizedLight" alt="GitRoll Profile Badge">
-                </a>
-            </div>
-        </section>
-
-        <section class="meeting">
-            <h3>📫 Let's Connect!</h3>
-            <p>Pick a slot if you'd like to meet and chat about anything you're passionate about—just make sure to describe the agenda.</p>
-            <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2yTLITzvwnkrprJtAhdCqih8hGBMLDlczBLqS5WPUJtdDvUqA5wE4O8xr_riU3kpJ5jOkHOvzq?gv=true" class="cta-button" target="_blank" rel="noopener noreferrer">
-                Schedule an Appointment
+    <!-- Particle Canvas -->
+    <canvas id="particles" class="particle-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="nav-logo-bracket">&lt;</span>tebayoso<span class="nav-logo-bracket">/&gt;</span>
             </a>
-        </section>
-
-        <section class="journey">
-            <h3>📊 Developer Journey</h3>
-            <div class="stats">
-                <img src="http://img.shields.io/badge/Code%20Time-10%20years%20-blue" alt="Code Time">
-                <img src="https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.8%20million%20lines%20of%20code-blue" alt="Lines of Code">
-            </div>
-            
-            <h4>🚀 Career Timeline</h4>
-            <ul class="timeline">
-                <li><strong>10/2012</strong> 🏗️ → 💻 Transitioned from Construction to Software Development</li>
-                <li><strong>10/2013</strong> 💼 Landed my first software engineering job</li>
-                <li><strong>04/2015</strong> 🥉 Semi Senior Developer at Globant</li>
-                <li><strong>09/2018</strong> 🥈 Engineering Manager at Michelin North America</li>
-                <li><strong>10/2020</strong> 🥇 Startup Founder at Euler Tools</li>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#facts" class="nav-link">Facts</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
             </ul>
-        </section>
+        </div>
+    </nav>
 
-        <section class="tech-stack">
-            <h3>🛠️ Tech Stack</h3>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Animated Orbs -->
+        <div class="orbs-container">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+            <div class="orb orb-5"></div>
+        </div>
+        
+        <!-- Grid Pattern -->
+        <div class="grid-pattern"></div>
+        
+        <!-- Floating Code Snippets -->
+        <div class="floating-snippets">
+            <div class="snippet snippet-1">const innovation = () =&gt; {...}</div>
+            <div class="snippet snippet-2">contract Future { ... }</div>
+            <div class="snippet snippet-3">async function build() {...}</div>
+            <div class="snippet snippet-4">ruby_on_rails_powered</div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                <span>Available for collaborations</span>
+            </div>
             
-            <div class="stack-category">
-                <h4>💬 Programming Languages</h4>
-                <div class="tags">
-                    <span class="tag">Ruby</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">Solidity</span>
-                    <span class="tag">Bash</span>
-                    <span class="tag">SQL</span>
+            <h1 class="hero-title">
+                <span class="hero-title-line">Hi, I'm</span>
+                <span class="hero-title-name">Jorge de los Santos</span>
+            </h1>
+            
+            <div class="hero-typing">
+                <span class="typing-prompt">&gt;</span>
+                <span class="typing-text" id="typingText"></span>
+                <span class="typing-cursor"></span>
+            </div>
+            
+            <p class="hero-description">
+                Building technology that matters from <span class="text-gradient-purple">Tandil, Argentina</span>.
+                <br>
+                15+ years turning complex problems into elegant solutions.
+            </p>
+            
+            <div class="hero-tags">
+                <div class="hero-tag">
+                    <svg class="hero-tag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>Full Stack</span>
+                </div>
+                <div class="hero-tag">
+                    <svg class="hero-tag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                    </svg>
+                    <span>Blockchain</span>
+                </div>
+                <div class="hero-tag">
+                    <svg class="hero-tag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                    </svg>
+                    <span>Cloud Native</span>
                 </div>
             </div>
+            
+            <div class="hero-social">
+                <a href="https://github.com/tebayoso" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/tebayoso" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://twitter.com/tebayoso" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+        </div>
+        
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
+    </section>
 
-            <div class="stack-category">
-                <h4>📦 Backend Frameworks</h4>
-                <div class="tags">
-                    <span class="tag">Ruby on Rails</span>
-                    <span class="tag">FeathersJS</span>
-                    <span class="tag">Koa</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">NextJS</span>
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">&lt;About /&gt;</span>
+                <h2 class="section-title">
+                    The Story <span class="text-gradient-cyan">So Far</span>
+                </h2>
+                <p class="section-subtitle">
+                    From construction sites to code commits, every experience shapes how I build.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card scroll-reveal">
+                    <div class="about-card-icon">🏗️</div>
+                    <h3 class="about-card-title">The Foundation</h3>
+                    <p class="about-card-text">
+                        Started in construction, where I learned that solid foundations matter—whether in buildings or software architecture.
+                    </p>
+                </div>
+                
+                <div class="about-card scroll-reveal">
+                    <div class="about-card-icon">💡</div>
+                    <h3 class="about-card-title">The Pivot</h3>
+                    <p class="about-card-text">
+                        2012: Made the leap to software. Self-taught, determined, and hungry to build things that live on screens instead of scaffolding.
+                    </p>
+                </div>
+                
+                <div class="about-card scroll-reveal">
+                    <div class="about-card-icon">⚡</div>
+                    <h3 class="about-card-title">The Impact</h3>
+                    <p class="about-card-text">
+                        Reduced query times by 99%, scaled systems 15x, and led teams at Michelin and startups. Results speak louder than buzzwords.
+                    </p>
                 </div>
             </div>
-
-            <div class="stack-category">
-                <h4>🎨 Frontend Frameworks</h4>
-                <div class="tags">
-                    <span class="tag">React</span>
-                    <span class="tag">Angular</span>
+            
+            <div class="about-stats scroll-reveal">
+                <div class="stat-item">
+                    <div class="stat-value" data-target="15">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-target="99">0</div>
+                    <div class="stat-label">% Query Improvement</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-target="15">0</div>
+                    <div class="stat-label">x Scale Achieved</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-target="4.8" data-decimals="1">0</div>
+                    <div class="stat-label">M Lines of Code</div>
                 </div>
             </div>
+            
+            <blockquote class="about-quote scroll-reveal">
+                <p>"Every line of code is a decision. I choose to build things that matter, with people who care, for problems worth solving."</p>
+            </blockquote>
+        </div>
+    </section>
 
-            <div class="stack-category">
-                <h4>☁️ Infrastructure & Cloud</h4>
-                <div class="tags">
-                    <span class="tag">AWS</span>
-                    <span class="tag">Digital Ocean</span>
+    <!-- Journey Section -->
+    <section class="section journey" id="journey">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">&lt;Journey /&gt;</span>
+                <h2 class="section-title">
+                    From <span class="text-gradient-orange">Hard Hats</span> to <span class="text-gradient-purple">Hard Drives</span>
+                </h2>
+                <p class="section-subtitle">
+                    A decade-plus journey of continuous growth, ethical leadership, and technical excellence.
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+                
+                <div class="timeline-item scroll-reveal" data-side="left">
+                    <div class="timeline-content">
+                        <span class="timeline-date timeline-date-orange">Oct 2012</span>
+                        <h3 class="timeline-title">The Pivot</h3>
+                        <div class="timeline-role">Construction → Software</div>
+                        <p class="timeline-description">
+                            Made the life-changing decision to transition from construction to software development. The foundation was laid for a new career.
+                        </p>
+                    </div>
+                    <div class="timeline-icon timeline-icon-orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 22h20M2 6h20M2 10h20M2 14h20M2 18h20"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="timeline-item scroll-reveal" data-side="right">
+                    <div class="timeline-content">
+                        <span class="timeline-date timeline-date-blue">Oct 2013</span>
+                        <h3 class="timeline-title">First Code Job</h3>
+                        <div class="timeline-role">Junior Developer</div>
+                        <p class="timeline-description">
+                            Landed my first professional software engineering position. The journey from learning to earning began.
+                        </p>
+                    </div>
+                    <div class="timeline-icon timeline-icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="timeline-item scroll-reveal" data-side="left">
+                    <div class="timeline-content">
+                        <span class="timeline-date timeline-date-purple">Apr 2015</span>
+                        <h3 class="timeline-title">Globant</h3>
+                        <div class="timeline-role">Semi-Senior Developer</div>
+                        <p class="timeline-description">
+                            Joined Globant and received the Annual Recognition for Ethical Action. Worked on Tribune Corporation P2P CMS project.
+                        </p>
+                        <div class="timeline-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <span>Ethics Award 2014</span>
+                        </div>
+                    </div>
+                    <div class="timeline-icon timeline-icon-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            <path d="M9 22v-4h6v4"></path>
+                            <path d="M8 6h.01"></path>
+                            <path d="M16 6h.01"></path>
+                            <path d="M12 6h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M12 14h.01"></path>
+                            <path d="M16 10h.01"></path>
+                            <path d="M16 14h.01"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M8 14h.01"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="timeline-item scroll-reveal" data-side="right">
+                    <div class="timeline-content">
+                        <span class="timeline-date timeline-date-green">May 2015</span>
+                        <h3 class="timeline-title">Decisiv Vision</h3>
+                        <div class="timeline-role">Senior Developer</div>
+                        <p class="timeline-description">
+                            Built real-time notifications architecture. Reduced database queries from 8000ms to 70ms. Scaled system from 800 to 12,000 RPM.
+                        </p>
+                        <div class="timeline-stats">
+                            <span class="timeline-stat">Query: 8000ms → 70ms</span>
+                            <span class="timeline-stat">12,000 RPM scale</span>
+                            <span class="timeline-stat">40% cost reduction</span>
+                        </div>
+                    </div>
+                    <div class="timeline-icon timeline-icon-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="timeline-item scroll-reveal" data-side="left">
+                    <div class="timeline-content">
+                        <span class="timeline-date timeline-date-yellow">Sep 2018</span>
+                        <h3 class="timeline-title">Michelin NA</h3>
+                        <div class="timeline-role">Engineering Manager</div>
+                        <p class="timeline-description">
+                            Led engineering teams at Michelin North America. Managed full-stack development and DevOps initiatives.
+                        </p>
+                    </div>
+                    <div class="timeline-icon timeline-icon-yellow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="timeline-item scroll-reveal" data-side="right">
+                    <div class="timeline-content">
+                        <span class="timeline-date timeline-date-cyan">2020</span>
+                        <h3 class="timeline-title">Euler Tools</h3>
+                        <div class="timeline-role">Startup Founder</div>
+                        <p class="timeline-description">
+                            Founded Euler Tools, diving deep into Web3 and blockchain technologies. Building decentralized applications and data-driven platforms.
+                        </p>
+                    </div>
+                    <div class="timeline-icon timeline-icon-cyan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="timeline-item scroll-reveal current" data-side="left">
+                    <div class="timeline-content">
+                        <div class="timeline-current-indicator">
+                            <span class="pulse"></span>
+                            <span>Current</span>
+                        </div>
+                        <span class="timeline-date timeline-date-pink">2023-Present</span>
+                        <h3 class="timeline-title">Motosierra Studio</h3>
+                        <div class="timeline-role">Founder & Lead Architect</div>
+                        <p class="timeline-description">
+                            Building Discord Game Builder - a collaborative game development platform with AI assistance, asset generation, and automated builds.
+                        </p>
+                    </div>
+                    <div class="timeline-icon timeline-icon-pink">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
                 </div>
             </div>
+            
+            <div class="journey-summary scroll-reveal">
+                <div class="journey-summary-icon">🎓</div>
+                <h3 class="journey-summary-title">Continuous Learning</h3>
+                <p class="journey-summary-text">
+                    Every role taught me something new. From construction's attention to structural integrity 
+                    to blockchain's decentralization principles—each experience shapes how I architect solutions today.
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <div class="stack-category">
-                <h4>🔧 Development Tools</h4>
-                <div class="tags">
-                    <span class="tag">WebStorm</span>
-                    <span class="tag">RubyMine</span>
-                    <span class="tag">VS Code</span>
-                    <span class="tag">Mac</span>
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag section-tag-green">&lt;Skills /&gt;</span>
+                <h2 class="section-title">
+                    Technical <span class="text-gradient-green">Arsenal</span>
+                </h2>
+                <p class="section-subtitle">
+                    Technologies I've mastered through years of hands-on experience.
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category scroll-reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-dot"></span>
+                        Languages
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Ruby</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="95" style="--skill-color: #CC342D;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="90" style="--skill-color: #3178C6;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Solidity</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85" style="--skill-color: #363636;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="88" style="--skill-color: #F29111;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category scroll-reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-dot"></span>
+                        Backend
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Ruby on Rails</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="95" style="--skill-color: #CC0000;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="90" style="--skill-color: #339933;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Express</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="88" style="--skill-color: #404040;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">NextJS API</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85" style="--skill-color: #fff;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category scroll-reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-dot"></span>
+                        Frontend
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React</span>
+                                <span class="skill-level">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="92" style="--skill-color: #61DAFB;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Angular</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80" style="--skill-color: #DD0031;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="95" style="--skill-color: #06B6D4;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Framer Motion</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="88" style="--skill-color: #FF00AA;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category scroll-reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-dot"></span>
+                        Blockchain
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Smart Contracts</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85" style="--skill-color: #627EEA;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Web3.js</span>
+                                <span class="skill-level">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="82" style="--skill-color: #F16822;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">DeFi Protocols</span>
+                                <span class="skill-level">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="78" style="--skill-color: #00D395;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">NFT Development</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80" style="--skill-color: #FF6B6B;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category scroll-reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-dot"></span>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">AWS</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="88" style="--skill-color: #FF9900;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Digital Ocean</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85" style="--skill-color: #0080FF;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-level">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="82" style="--skill-color: #2496ED;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Terraform</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="75" style="--skill-color: #7B42BC;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category scroll-reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-dot"></span>
+                        Databases
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="90" style="--skill-color: #336791;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="88" style="--skill-color: #4479A1;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Redis</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80" style="--skill-color: #DC382D;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQLite</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85" style="--skill-color: #003B57;"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+            
+            <div class="section-header scroll-reveal" style="margin-top: 4rem;">
+                <h3 class="section-title" style="font-size: 2rem;">
+                    Types of <span class="text-gradient-purple">Challenges</span> I Solve
+                </h3>
+                <p class="section-subtitle">Real problems. Real solutions. Real impact.</p>
+            </div>
+            
+            <div class="challenges-grid">
+                <div class="challenge-card scroll-reveal">
+                    <div class="challenge-icon">⚡</div>
+                    <h4 class="challenge-title">Performance Optimization</h4>
+                    <p class="challenge-description">
+                        Reduced database queries from 8000ms to 70ms at Decisiv. Expert at identifying bottlenecks and implementing elegant solutions.
+                    </p>
+                </div>
+                
+                <div class="challenge-card scroll-reveal">
+                    <div class="challenge-icon">🏗️</div>
+                    <h4 class="challenge-title">System Architecture</h4>
+                    <p class="challenge-description">
+                        Designed scalable systems handling 12,000+ RPM. From monoliths to microservices, I architect for growth.
+                    </p>
+                </div>
+                
+                <div class="challenge-card scroll-reveal">
+                    <div class="challenge-icon">🚀</div>
+                    <h4 class="challenge-title">Team Leadership</h4>
+                    <p class="challenge-description">
+                        Led engineering teams at Michelin and startups. I believe in servant leadership and growing people alongside code.
+                    </p>
+                </div>
+                
+                <div class="challenge-card scroll-reveal">
+                    <div class="challenge-icon">⛓️</div>
+                    <h4 class="challenge-title">Web3 Integration</h4>
+                    <p class="challenge-description">
+                        Bridging traditional web apps with blockchain. Smart contracts, DApps, and decentralized solutions.
+                    </p>
+                </div>
+                
+                <div class="challenge-card scroll-reveal">
+                    <div class="challenge-icon">🔧</div>
+                    <h4 class="challenge-title">Legacy Modernization</h4>
+                    <p class="challenge-description">
+                        Upgraded Ruby 1.9 to 2.3 while maintaining uptime. Turning technical debt into technical assets.
+                    </p>
+                </div>
+                
+                <div class="challenge-card scroll-reveal">
+                    <div class="challenge-icon">🤖</div>
+                    <h4 class="challenge-title">AI-Powered Tools</h4>
+                    <p class="challenge-description">
+                        Building Discord Game Builder with AI assistance. Leveraging modern AI for developer productivity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2026 Jorge de los Santos. All rights reserved.</p>
-            <p><a href="https://github.com/tebayoso" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
-        </footer>
-    </div>
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag section-tag-pink">&lt;Projects /&gt;</span>
+                <h2 class="section-title">
+                    Featured <span class="text-gradient-pink">Work</span>
+                </h2>
+                <p class="section-subtitle">
+                    Projects that showcase technical excellence and real-world impact.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card project-card-featured scroll-reveal">
+                    <div class="project-card-inner">
+                        <div class="project-gradient project-gradient-red"></div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-icon project-icon-red">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="6" y1="12" x2="10" y2="12"></line>
+                                        <line x1="8" y1="10" x2="8" y2="14"></line>
+                                        <line x1="15" y1="13" x2="15.01" y2="13"></line>
+                                        <line x1="18" y1="11" x2="18.01" y2="11"></line>
+                                        <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="project-title">Motosierra Studio</h3>
+                                    <p class="project-subtitle">Discord Game Builder</p>
+                                </div>
+                                <span class="project-badge">Featured</span>
+                            </div>
+                            <p class="project-description">
+                                A Discord-based collaborative game development platform. Build games through Discord chat with AI assistance, asset generation, and automated Love2D to HTML5 builds.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Discord.js</span>
+                                <span class="project-tag">TypeScript</span>
+                                <span class="project-tag">Love2D</span>
+                                <span class="project-tag">SQLite</span>
+                                <span class="project-tag">OpenAI</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="project-stat-value">50+</div>
+                                    <div class="project-stat-label">Games Created</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="project-stat-value">99%</div>
+                                    <div class="project-stat-label">Build Success</div>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://games.sinequix.com" target="_blank" rel="noopener" class="project-link project-link-primary">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card scroll-reveal">
+                    <div class="project-card-inner">
+                        <div class="project-gradient project-gradient-orange"></div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-icon project-icon-orange">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="project-title">AWS Login Helper</h3>
+                                    <p class="project-subtitle">DevOps CLI Tool</p>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                An AWS CLI side helper for managing multiple profiles across different authentication methods. Built for consultants and large organizations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">AWS SDK</span>
+                                <span class="project-tag">1Password</span>
+                                <span class="project-tag">CLI</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="project-stat-value">∞</div>
+                                    <div class="project-stat-label">Profiles Managed</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="project-stat-value">Hours</div>
+                                    <div class="project-stat-label">Time Saved</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card scroll-reveal">
+                    <div class="project-card-inner">
+                        <div class="project-gradient project-gradient-blue"></div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-icon project-icon-blue">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="project-title">Decisiv Vision</h3>
+                                    <p class="project-subtitle">Fleet Management Platform</p>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Visualization tool for vehicle asset owners. Transformed a legacy system into a high-performance platform. Reduced queries from 8000ms to 70ms.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Ruby on Rails</span>
+                                <span class="project-tag">Backbone.js</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">PubNub</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="project-stat-value">-99%</div>
+                                    <div class="project-stat-label">Query Time</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="project-stat-value">15x</div>
+                                    <div class="project-stat-label">Scale</div>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://decisiv.com" target="_blank" rel="noopener" class="project-link project-link-primary">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card scroll-reveal">
+                    <div class="project-card-inner">
+                        <div class="project-gradient project-gradient-purple"></div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-icon project-icon-purple">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="project-title">Tribune P2P CMS</h3>
+                                    <p class="project-subtitle">Content Management System</p>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Software maintenance and feature development for Tribune Corporation CMS. Ruby on Rails backend with complex publishing workflows.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Ruby on Rails</span>
+                                <span class="project-tag">PostgreSQL</span>
+                                <span class="project-tag">Redis</span>
+                                <span class="project-tag">Sidekiq</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="project-stat-value">99.9%</div>
+                                    <div class="project-stat-label">Uptime</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="project-stat-value">Millions</div>
+                                    <div class="project-stat-label">Users</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta scroll-reveal">
+                <a href="https://github.com/tebayoso" target="_blank" rel="noopener" class="projects-cta-button">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    View More on GitHub
+                    <span class="projects-cta-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facts Section -->
+    <section class="section facts" id="facts">
+        <div class="facts-sparkles"></div>
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag section-tag-cyan">&lt;Discover /&gt;</span>
+                <h2 class="section-title">
+                    Things You Might Not <span class="text-gradient-cyan">Know</span>
+                </h2>
+                <p class="section-subtitle">
+                    Beyond the code—quirks, achievements, and the human behind the keyboard.
+                </p>
+            </div>
+            
+            <div class="facts-grid">
+                <div class="fact-card scroll-reveal">
+                    <div class="fact-card-inner">
+                        <div class="fact-front">
+                            <div class="fact-icon">⚡</div>
+                            <h3 class="fact-title">99% Performance Boost</h3>
+                            <p class="fact-hint">Hover to discover</p>
+                        </div>
+                        <div class="fact-back">
+                            <p class="fact-description">
+                                At Decisiv, I reduced database query time from <strong>8000ms to 70ms</strong>—a 99% improvement that transformed user experience and system scalability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fact-card scroll-reveal">
+                    <div class="fact-card-inner">
+                        <div class="fact-front">
+                            <div class="fact-icon">🏆</div>
+                            <h3 class="fact-title">Ethics Award Winner</h3>
+                            <p class="fact-hint">Hover to discover</p>
+                        </div>
+                        <div class="fact-back">
+                            <p class="fact-description">
+                                Received the <strong>Globant Annual Recognition for Ethical Action</strong> in 2014. I believe how we build matters as much as what we build.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fact-card scroll-reveal">
+                    <div class="fact-card-inner">
+                        <div class="fact-front">
+                            <div class="fact-icon">🏗️</div>
+                            <h3 class="fact-title">From Hard Hats to Hard Drives</h3>
+                            <p class="fact-hint">Hover to discover</p>
+                        </div>
+                        <div class="fact-back">
+                            <p class="fact-description">
+                                Before software, I worked in <strong>construction</strong>. The same principles apply: solid foundations, attention to detail, and building things that last.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fact-card scroll-reveal">
+                    <div class="fact-card-inner">
+                        <div class="fact-front">
+                            <div class="fact-icon">📍</div>
+                            <h3 class="fact-title">Tandil, Argentina</h3>
+                            <p class="fact-hint">Hover to discover</p>
+                        </div>
+                        <div class="fact-back">
+                            <p class="fact-description">
+                                Based in <strong>Tandil</strong>—a beautiful city known for its mountains, moving rocks, and apparently, software architects who work with teams worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fact-card scroll-reveal">
+                    <div class="fact-card-inner">
+                        <div class="fact-front">
+                            <div class="fact-icon">🎮</div>
+                            <h3 class="fact-title">Discord Game Builder</h3>
+                            <p class="fact-hint">Hover to discover</p>
+                        </div>
+                        <div class="fact-back">
+                            <p class="fact-description">
+                                Currently building <strong>Motosierra Studio</strong>—a Discord-based game development platform where you can create games through chat, with AI assistance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fact-card scroll-reveal">
+                    <div class="fact-card-inner">
+                        <div class="fact-front">
+                            <div class="fact-icon">🌐</div>
+                            <h3 class="fact-title">Remote-First Pioneer</h3>
+                            <p class="fact-hint">Hover to discover</p>
+                        </div>
+                        <div class="fact-back">
+                            <p class="fact-description">
+                                Led remote teams at <strong>Michelin North America</strong> years before it became standard. I know how to build culture and deliver results across time zones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-container">
+            <div class="contact-content scroll-reveal">
+                <h2 class="contact-title">
+                    Let's Build Something <span class="text-gradient-cyan">Amazing</span> Together
+                </h2>
+                <p class="contact-description">
+                    Whether you have a project in mind, want to discuss blockchain architecture, 
+                    or just want to chat about the future of tech—I'm always open to interesting conversations.
+                </p>
+                <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2yTLITzvwnkrprJtAhdCqih8hGBMLDlczBLqS5WPUJtdDvUqA5wE4O8xr_riU3kpJ5jOkHOvzq?gv=true" target="_blank" rel="noopener" class="contact-cta">
+                    Schedule a Chat
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">&lt;tebayoso/&gt;</span>
+                    <p class="footer-tagline">Building technology that matters</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/tebayoso" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/tebayoso" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://twitter.com/tebayoso" target="_blank" rel="noopener" class="footer-social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jorge de los Santos. All rights reserved.</p>
+                <p>Built with passion in Tandil, Argentina 🧉</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
