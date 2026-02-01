@@ -142,35 +142,35 @@ title: Journal
             </div>
         </div>
 
-        <!-- 2022 -->
+        <!-- 2025 -->
         <div class="journal-year scroll-reveal">
-            <div class="year-badge">2022</div>
+            <div class="year-badge">2025</div>
             
             <div class="journal-items">
                 <div class="journal-item">
                     <div class="journal-marker"></div>
                     <div class="journal-content">
                         <div class="journal-header-row">
-                            <h3 class="journal-title">Ipsy</h3>
+                            <h3 class="journal-title">Tribbu</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Senior Software Engineer</div>
-                        <p class="journal-description">Beauty subscription commerce platform. Optimized subscription management, improved billing workflows, and built personalization algorithms for millions of subscribers.</p>
+                        <div class="journal-role">Infrastructure Architect</div>
+                        <p class="journal-description">Cloud infrastructure architecture on Google Cloud Platform. Implemented Infrastructure as Code with OpenTofu/Terraform, built Kubernetes clusters, and optimized cloud costs.</p>
                         <div class="journal-tags">
-                            <span class="tag">Rails</span>
-                            <span class="tag">React</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">E-commerce</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">Terraform</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">OpenTofu</span>
                         </div>
-                        <a href="/blog/2022/03/01/ipsy-senior-engineer/" class="journal-link">Read full story →</a>
+                        <a href="/blog/2025/01/01/tribbu-infrastructure/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- 2021 -->
+        <!-- 2024-2025 -->
         <div class="journal-year scroll-reveal">
-            <div class="year-badge">2021</div>
+            <div class="year-badge">2024 — 2025</div>
             
             <div class="journal-items">
                 <div class="journal-item">
@@ -180,17 +180,51 @@ title: Journal
                             <h3 class="journal-title">Dcycle</h3>
                             <span class="journal-type project">Project</span>
                         </div>
-                        <div class="journal-role">Blockchain Consultant</div>
-                        <p class="journal-description">Blockchain consulting for Web3 companies. Built NFT marketplaces, integrated DeFi protocols, and advised on tokenomics for multiple projects.</p>
+                        <div class="journal-role">DevOps Engineer & Infrastructure Architect</div>
+                        <p class="journal-description">Web3 infrastructure and blockchain DevOps. Built scalable infrastructure for NFT marketplaces, DeFi protocols, and blockchain node operations.</p>
                         <div class="journal-tags">
-                            <span class="tag">Solidity</span>
-                            <span class="tag">Web3.js</span>
-                            <span class="tag">NFT</span>
-                            <span class="tag">DeFi</span>
+                            <span class="tag">Web3</span>
+                            <span class="tag">Terraform</span>
+                            <span class="tag">AWS/GCP</span>
+                            <span class="tag">Blockchain</span>
                         </div>
-                        <a href="/blog/2021/01/01/dcycle-blockchain/" class="journal-link">Read full story →</a>
+                        <a href="/blog/2024/01/01/dcycle-blockchain/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- 2023-2024 -->
+        <div class="journal-year scroll-reveal">
+            <div class="year-badge">2023 — 2024</div>
+            
+            <div class="journal-items">
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">Uttopion</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">DevOps Consultant</div>
+                        <p class="journal-description">VR platform infrastructure based in Madrid, Spain. Built scalable backend systems, DevOps practices, and cloud infrastructure for VR content distribution platform.</p>
+                        <div class="journal-tags">
+                            <span class="tag">VR</span>
+                            <span class="tag">DevOps</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Madrid</span>
+                        </div>
+                        <a href="/blog/2023/06/01/uttopion-vr/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2021 (AWS Login Helper only) -->
+        <div class="journal-year scroll-reveal">
+            <div class="year-badge">2021</div>
+            
+            <div class="journal-items">
 
                 <div class="journal-item">
                     <div class="journal-marker"></div>
@@ -221,11 +255,31 @@ title: Journal
                     <div class="journal-marker"></div>
                     <div class="journal-content">
                         <div class="journal-header-row">
+                            <h3 class="journal-title">Ipsy</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">DevOps Engineer (Concurrent with Michelin)</div>
+                        <p class="journal-description">Beauty subscription e-commerce platform based in San Francisco Bay Area. Managed AWS infrastructure, Kubernetes clusters, and CI/CD pipelines for millions of subscribers. Overlapped with Michelin role.</p>
+                        <div class="journal-achievement">🏆 Concurrent Role | San Francisco</div>
+                        <div class="journal-tags">
+                            <span class="tag">DevOps</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                        <a href="/blog/2019/03/01/ipsy-devops-engineer/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
                             <h3 class="journal-title">BFA (Beauty For All Industries)</h3>
                             <span class="journal-type company">Company</span>
                         </div>
                         <div class="journal-role">DevOps Engineer</div>
-                        <p class="journal-description">Managed infrastructure supporting 40M concurrent users. Led PostgreSQL to MongoDB migration and built scalable DevOps pipelines for high-traffic beauty e-commerce platforms.</p>
+                        <p class="journal-description">Managed infrastructure supporting 40M concurrent users. Led PostgreSQL to MongoDB migration and built scalable DevOps pipelines for high-traffic beauty e-commerce platforms. Jan 2019 - Mar 2021.</p>
                         <div class="journal-achievement">🏆 40M Concurrent Users | DB Migration</div>
                         <div class="journal-tags">
                             <span class="tag">AWS</span>
@@ -240,7 +294,7 @@ title: Journal
             </div>
         </div>
 
-        <!-- 2020 -->
+        <!-- 2020-2023 -->
         <div class="journal-year scroll-reveal">
             <div class="year-badge">2020 — 2023</div>
             
@@ -266,27 +320,28 @@ title: Journal
             </div>
         </div>
 
-        <!-- 2019 -->
+        <!-- 2017-2019 -->
         <div class="journal-year scroll-reveal">
-            <div class="year-badge">2019</div>
+            <div class="year-badge">2017 — 2019</div>
             
             <div class="journal-items">
                 <div class="journal-item">
                     <div class="journal-marker"></div>
                     <div class="journal-content">
                         <div class="journal-header-row">
-                            <h3 class="journal-title">Uttopion</h3>
-                            <span class="journal-type project">Project</span>
+                            <h3 class="journal-title">Sinequix</h3>
+                            <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Lead Developer</div>
-                        <p class="journal-description">Virtual reality platform development. Built backend infrastructure for VR content distribution, multiplayer features, and spatial audio systems.</p>
+                        <div class="journal-role">Founder & CEO (Concurrent with Decisiv)</div>
+                        <p class="journal-description">Founded a staff augmentation and consulting company in Tandil, Argentina. Provided software development services to international clients while at Decisiv. Built and led a team of developers for remote consulting engagements.</p>
+                        <div class="journal-achievement">🏆 Founder | Staff Augmentation | Tandil, Argentina</div>
                         <div class="journal-tags">
-                            <span class="tag">Unity</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">WebRTC</span>
-                            <span class="tag">VR</span>
+                            <span class="tag">Consulting</span>
+                            <span class="tag">Team Building</span>
+                            <span class="tag">Remote Work</span>
+                            <span class="tag">Entrepreneurship</span>
                         </div>
-                        <a href="/blog/2019/06/01/uttopion-vr/" class="journal-link">Read full story →</a>
+                        <a href="/blog/2017/01/01/sinequix-founder/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
             </div>
@@ -305,7 +360,8 @@ title: Journal
                             <span class="journal-type company">Company</span>
                         </div>
                         <div class="journal-role">Engineering Manager</div>
-                        <p class="journal-description">Led engineering teams in remote-first environment. Managed full-stack development, DevOps initiatives, and manufacturing digitalization projects. Team transitioned from AgilityFeat acquisition.</p>
+                        <p class="journal-description">Led engineering teams in remote-first environment. Managed full-stack development, DevOps initiatives, and manufacturing digitalization projects. Started AFTER Decisiv — NOT an acquisition. Concurrent with Ipsy consulting work.</p>
+                        <div class="journal-achievement">🏆 Remote-First Leadership | Not an Acquisition</div>
                         <div class="journal-tags">
                             <span class="tag">AWS</span>
                             <span class="tag">Docker</span>
@@ -327,47 +383,20 @@ title: Journal
                     <div class="journal-marker"></div>
                     <div class="journal-content">
                         <div class="journal-header-row">
-                            <h3 class="journal-title">AgilityFeat</h3>
+                            <h3 class="journal-title">Decisiv</h3>
                             <span class="journal-type company">Company</span>
                         </div>
                         <div class="journal-role">Lead Software Developer</div>
-                        <p class="journal-description">Grew engineering team from 5 to 26 developers. Led Decisiv projects and multiple enterprise initiatives. Company acquired by Michelin North America in 2018.</p>
-                        <div class="journal-achievement">🏆 Team Growth: 5 → 26 | Acquired by Michelin</div>
+                        <p class="journal-description">Led development at Decisiv, a fleet management software company in Washington/Richmond, USA. Built Decisiv Vision and Decisiv Builder platforms. Achieved 99% query optimization. NOT acquired by Michelin — that was incorrect information.</p>
+                        <div class="journal-achievement">🏆 Query: 8000ms → 70ms | NOT Acquired</div>
                         <div class="journal-tags">
                             <span class="tag">Rails</span>
                             <span class="tag">JavaScript</span>
                             <span class="tag">MySQL</span>
                             <span class="tag">Leadership</span>
-                            <span class="tag">Scaling</span>
+                            <span class="tag">Optimization</span>
                         </div>
-                        <a href="/blog/2015/05/01/agilityfeat-lead-developer/" class="journal-link">Read full story →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 2016-2017 -->
-        <div class="journal-year scroll-reveal">
-            <div class="year-badge">2016 — 2017</div>
-            
-            <div class="journal-items">
-                <div class="journal-item">
-                    <div class="journal-marker"></div>
-                    <div class="journal-content">
-                        <div class="journal-header-row">
-                            <h3 class="journal-title">Globant</h3>
-                            <span class="journal-type company">Company</span>
-                        </div>
-                        <div class="journal-role">Senior Software Engineer</div>
-                        <p class="journal-description">Promoted to Senior Engineer. Led development teams on enterprise projects including LPL Acquimerge by Atria, Apartments.com API, and Kafka data pipelines. Mentored junior developers.</p>
-                        <div class="journal-tags">
-                            <span class="tag">Rails</span>
-                            <span class="tag">React</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">Kafka</span>
-                            <span class="tag">Mentoring</span>
-                        </div>
-                        <a href="/blog/2016/01/01/globant-senior-engineer/" class="journal-link">Read full story →</a>
+                        <a href="/blog/2015/05/01/decisiv-lead-developer/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
             </div>

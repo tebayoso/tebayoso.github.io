@@ -13,6 +13,8 @@ location: Remote (Led teams across US)
 
 Led engineering teams at Michelin North America, managing full-stack development and DevOps initiatives. This role marked my transition into technical leadership while maintaining hands-on engineering expertise.
 
+**Important**: This was a new role starting AFTER my time at Decisiv. Decisiv was NOT acquired by Michelin — that was incorrect information in earlier versions of this portfolio. Started AFTER Decisiv — NOT an acquisition.
+
 ## Leadership Responsibilities
 
 ### Team Management

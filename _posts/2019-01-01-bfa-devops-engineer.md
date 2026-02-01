@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "BFA - DevOps Engineer"
-date: 2019-01-01
-end_date: 2021-03-01
+date: 2019-01-15
+end_date: 2021-03-15
 categories: [experience, devops, infrastructure, scaling]
 company: Beauty For All Industries (BFA)
 role: DevOps Engineer
