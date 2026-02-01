@@ -1,0 +1,35 @@
+// ========================================
+// Variables
+// ========================================
+
+// Colors
+$color-bg: #0a0a0a;
+$color-bg-secondary: #111111;
+$color-text: #ffffff;
+$color-text-muted: #a1a1aa;
+$color-text-dim: #71717a;
+
+// Neon Colors
+$neon-cyan: #00f5ff;
+$neon-purple: #b026ff;
+$neon-pink: #ff00aa;
+$neon-green: #00ff9d;
+
+// Gradients
+$gradient-cyan: linear-gradient(135deg, $neon-cyan, $neon-purple);
+$gradient-purple: linear-gradient(135deg, $neon-purple, $neon-pink);
+$gradient-green: linear-gradient(135deg, $neon-green, $neon-cyan);
+$gradient-orange: linear-gradient(135deg, #f97316, #ef4444);
+
+// Fonts
+$font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-medium: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Breakpoints
+$mobile: 768px;
+$tablet: 1024px;

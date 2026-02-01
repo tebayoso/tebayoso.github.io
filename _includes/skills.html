@@ -1,0 +1,47 @@
+<section class="section skills" id="skills">
+    <div class="section-container">
+        {% include section-header.html tag="Skills" title="Technical" highlight="Arsenal" tag_color="green"
+           subtitle="Technologies I've mastered through years of hands-on experience." %}
+        
+        <div class="skills-grid">
+            {% for category in site.skills_categories %}
+            <div class="skill-category scroll-reveal">
+                <h3 class="skill-category-title">
+                    <span class="skill-dot"></span>
+                    {{ category.name }}
+                </h3>
+                <div class="skill-list">
+                    {% for skill in category.skills %}
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">{{ skill.name }}</span>
+                            <span class="skill-level">{{ skill.level }}%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="{{ skill.level }}" style="--skill-color: {{ skill.color }};"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="section-header scroll-reveal" style="margin-top: 4rem;">
+            <h3 class="section-title" style="font-size: 2rem;">
+                Types of <span class="text-gradient-purple">Challenges</span> I Solve
+            </h3>
+            <p class="section-subtitle">Real problems. Real solutions. Real impact.</p>
+        </div>
+        
+        <div class="challenges-grid">
+            {% for challenge in site.challenges %}
+            <div class="challenge-card scroll-reveal">
+                <div class="challenge-icon">{{ challenge.icon }}</div>
+                <h4 class="challenge-title">{{ challenge.title }}</h4>
+                <p class="challenge-description">{{ challenge.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

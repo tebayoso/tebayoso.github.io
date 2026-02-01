@@ -1,15 +1,232 @@
-title: Jorge de los Santos
-description: Software Architect | Platform Engineer | Blockchain Developer
-author: Jorge de los Santos
-email: contact@tebayoso.dev
-url: https://tebayoso.github.io
+title: "Jorge de los Santos"
+description: "Software Architect | Platform Engineer | Blockchain Developer | 15+ years turning complex problems into elegant solutions"
+author: "Jorge de los Santos"
+email: ""
+url: "https://tebayoso.github.io"
 baseurl: ""
 
-# Social
+# Social Links
 twitter_username: tebayoso
 github_username: tebayoso
 linkedin_username: tebayoso
 
-# Build settings
+# Build Settings
+markdown: kramdown
+highlighter: rouge
 theme: null
-plugins: []
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: false
+  timeline:
+    output: false
+
+# Sass
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - README.md
+  - LICENSE
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Custom Variables
+hero_roles:
+  - "Software Architect"
+  - "Platform Engineer"
+  - "Blockchain Developer"
+  - "Startup Founder"
+  - "Open Source Contributor"
+
+skills_categories:
+  - name: "Languages"
+    skills:
+      - { name: "Ruby", level: 95, color: "#CC342D" }
+      - { name: "TypeScript", level: 90, color: "#3178C6" }
+      - { name: "Solidity", level: 85, color: "#363636" }
+      - { name: "SQL", level: 88, color: "#F29111" }
+  - name: "Backend"
+    skills:
+      - { name: "Ruby on Rails", level: 95, color: "#CC0000" }
+      - { name: "Node.js", level: 90, color: "#339933" }
+      - { name: "Express", level: 88, color: "#404040" }
+      - { name: "NextJS API", level: 85, color: "#ffffff" }
+  - name: "Frontend"
+    skills:
+      - { name: "React", level: 92, color: "#61DAFB" }
+      - { name: "Angular", level: 80, color: "#DD0031" }
+      - { name: "Tailwind CSS", level: 95, color: "#06B6D4" }
+  - name: "Blockchain"
+    skills:
+      - { name: "Smart Contracts", level: 85, color: "#627EEA" }
+      - { name: "Web3.js", level: 82, color: "#F16822" }
+      - { name: "DeFi Protocols", level: 78, color: "#00D395" }
+  - name: "Cloud & DevOps"
+    skills:
+      - { name: "AWS", level: 88, color: "#FF9900" }
+      - { name: "Digital Ocean", level: 85, color: "#0080FF" }
+      - { name: "Docker", level: 82, color: "#2496ED" }
+  - name: "Databases"
+    skills:
+      - { name: "PostgreSQL", level: 90, color: "#336791" }
+      - { name: "MySQL", level: 88, color: "#4479A1" }
+      - { name: "Redis", level: 80, color: "#DC382D" }
+
+timeline_events:
+  - date: "Oct 2012"
+    title: "The Pivot"
+    role: "Construction → Software"
+    description: "Made the life-changing decision to transition from construction to software development."
+    icon: "hardhat"
+    color: "orange"
+    side: "left"
+  - date: "Oct 2013"
+    title: "First Code Job"
+    role: "Junior Developer"
+    description: "Landed my first professional software engineering position."
+    icon: "code"
+    color: "blue"
+    side: "right"
+  - date: "Apr 2015"
+    title: "Globant"
+    role: "Semi-Senior Developer"
+    description: "Joined Globant and received the Annual Recognition for Ethical Action."
+    icon: "building"
+    color: "purple"
+    side: "left"
+    badge: "Ethics Award 2014"
+  - date: "May 2015"
+    title: "Decisiv Vision"
+    role: "Senior Developer"
+    description: "Built real-time notifications architecture. Reduced queries from 8000ms to 70ms."
+    icon: "rocket"
+    color: "green"
+    side: "right"
+    stats: ["Query: 8000ms → 70ms", "12,000 RPM scale", "40% cost reduction"]
+  - date: "Sep 2018"
+    title: "Michelin NA"
+    role: "Engineering Manager"
+    description: "Led engineering teams at Michelin North America."
+    icon: "briefcase"
+    color: "yellow"
+    side: "left"
+  - date: "2020"
+    title: "Euler Tools"
+    role: "Startup Founder"
+    description: "Founded Euler Tools, diving deep into Web3 and blockchain."
+    icon: "rocket"
+    color: "cyan"
+    side: "right"
+  - date: "2023-Present"
+    title: "Motosierra Studio"
+    role: "Founder & Lead Architect"
+    description: "Building Discord Game Builder with AI assistance."
+    icon: "star"
+    color: "pink"
+    side: "left"
+    current: true
+
+projects:
+  - title: "Motosierra Studio"
+    subtitle: "Discord Game Builder"
+    description: "A Discord-based collaborative game development platform with AI assistance."
+    icon: "gamepad"
+    color: "red"
+    tags: ["Discord.js", "TypeScript", "Love2D", "SQLite", "OpenAI"]
+    stats:
+      - { label: "Games Created", value: "50+" }
+      - { label: "Build Success", value: "99%" }
+    demo: "https://games.sinequix.com"
+    featured: true
+  - title: "AWS Login Helper"
+    subtitle: "DevOps CLI Tool"
+    description: "AWS CLI helper for managing multiple profiles across authentication methods."
+    icon: "cloud"
+    color: "orange"
+    tags: ["Node.js", "AWS SDK", "1Password", "CLI"]
+    stats:
+      - { label: "Profiles Managed", value: "∞" }
+      - { label: "Time Saved", value: "Hours" }
+  - title: "Decisiv Vision"
+    subtitle: "Fleet Management Platform"
+    description: "Visualization tool that reduced query times by 99% and scaled 15x."
+    icon: "briefcase"
+    color: "blue"
+    tags: ["Ruby on Rails", "Backbone.js", "MySQL", "PubNub"]
+    stats:
+      - { label: "Query Time", value: "-99%" }
+      - { label: "Scale", value: "15x" }
+    demo: "https://decisiv.com"
+  - title: "Tribune P2P CMS"
+    subtitle: "Content Management System"
+    description: "Software maintenance and feature development for Tribune Corporation."
+    icon: "database"
+    color: "purple"
+    tags: ["Ruby on Rails", "PostgreSQL", "Redis", "Sidekiq"]
+    stats:
+      - { label: "Uptime", value: "99.9%" }
+      - { label: "Users", value: "Millions" }
+
+facts:
+  - icon: "⚡"
+    title: "99% Performance Boost"
+    description: "At Decisiv, I reduced database query time from <strong>8000ms to 70ms</strong>—a 99% improvement."
+  - icon: "🏆"
+    title: "Ethics Award Winner"
+    description: "Received the <strong>Globant Annual Recognition for Ethical Action</strong> in 2014."
+  - icon: "🏗️"
+    title: "From Hard Hats to Hard Drives"
+    description: "Before software, I worked in <strong>construction</strong>. Same principles apply: solid foundations."
+  - icon: "📍"
+    title: "Tandil, Argentina"
+    description: "Based in <strong>Tandil</strong>—a beautiful city known for mountains and moving rocks."
+  - icon: "🎮"
+    title: "Discord Game Builder"
+    description: "Currently building <strong>Motosierra Studio</strong>—a Discord-based game dev platform with AI."
+  - icon: "🌐"
+    title: "Remote-First Pioneer"
+    description: "Led remote teams at <strong>Michelin North America</strong> years before it became standard."
+
+challenges:
+  - icon: "⚡"
+    title: "Performance Optimization"
+    description: "Expert at identifying bottlenecks and implementing elegant solutions."
+  - icon: "🏗️"
+    title: "System Architecture"
+    description: "Designed scalable systems handling 12,000+ RPM. Architect for growth."
+  - icon: "🚀"
+    title: "Team Leadership"
+    description: "Led engineering teams at Michelin and startups. Servant leadership approach."
+  - icon: "⛓️"
+    title: "Web3 Integration"
+    description: "Bridging traditional web apps with blockchain and smart contracts."
+  - icon: "🔧"
+    title: "Legacy Modernization"
+    description: "Turning technical debt into technical assets. Upgraded Ruby 1.9 to 2.3."
+  - icon: "🤖"
+    title: "AI-Powered Tools"
+    description: "Leveraging modern AI for developer productivity and automation."

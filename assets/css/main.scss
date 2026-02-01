@@ -1,0 +1,109 @@
+---
+---
+
+// ========================================
+// Main Stylesheet
+// Jorge de los Santos Portfolio
+// ========================================
+
+// Base
+@import 'variables';
+@import 'base';
+@import 'utilities';
+
+// Components
+@import 'components/navigation';
+@import 'components/sections';
+@import 'components/footer';
+@import 'components/back-to-top';
+
+// Sections
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/timeline';
+@import 'sections/skills';
+@import 'sections/projects';
+@import 'sections/facts';
+@import 'sections/contact';
+
+// ========================================
+// Responsive Design
+// ========================================
+
+@media (max-width: $mobile) {
+    .hero {
+        padding: 5rem 1rem;
+    }
+    
+    .section {
+        padding: 4rem 1rem;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timeline-item {
+        padding-left: 4rem;
+    }
+    
+    .timeline-line {
+        left: 1.5rem;
+    }
+    
+    .timeline-icon {
+        left: 1.5rem;
+        width: 40px;
+        height: 40px;
+        
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card-featured {
+        grid-column: 1;
+    }
+    
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .fact-card {
+        height: 180px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+// Reduced Motion
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}

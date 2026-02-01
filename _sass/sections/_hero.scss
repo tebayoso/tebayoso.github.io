@@ -1,0 +1,365 @@
+// ========================================
+// Hero Section
+// ========================================
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 6rem 1.5rem;
+}
+
+// Animated Orbs
+.orbs-container {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+}
+
+.orb-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba($neon-cyan, 0.3) 0%, transparent 70%);
+    animation: orbFloat1 20s ease-in-out infinite;
+}
+
+.orb-2 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba($neon-purple, 0.3) 0%, transparent 70%);
+    animation: orbFloat2 25s ease-in-out infinite;
+}
+
+.orb-3 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba($neon-cyan, 0.2) 0%, transparent 70%);
+    animation: orbFloat3 18s ease-in-out infinite;
+}
+
+.orb-4 {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba($neon-pink, 0.2) 0%, transparent 70%);
+    animation: orbFloat4 22s ease-in-out infinite;
+}
+
+.orb-5 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba($neon-green, 0.2) 0%, transparent 70%);
+    animation: orbFloat5 15s ease-in-out infinite;
+}
+
+@keyframes orbFloat1 {
+    0%, 100% { transform: translate(10%, 20%) scale(1); }
+    25% { transform: translate(60%, 40%) scale(1.2); }
+    50% { transform: translate(30%, 60%) scale(0.9); }
+    75% { transform: translate(50%, 30%) scale(1.1); }
+}
+
+@keyframes orbFloat2 {
+    0%, 100% { transform: translate(70%, 10%) scale(1); }
+    33% { transform: translate(40%, 50%) scale(1.1); }
+    66% { transform: translate(80%, 30%) scale(0.9); }
+}
+
+@keyframes orbFloat3 {
+    0%, 100% { transform: translate(20%, 70%) scale(1); }
+    50% { transform: translate(50%, 40%) scale(1.15); }
+}
+
+@keyframes orbFloat4 {
+    0%, 100% { transform: translate(80%, 60%) scale(1); }
+    33% { transform: translate(50%, 80%) scale(0.95); }
+    66% { transform: translate(70%, 40%) scale(1.1); }
+}
+
+@keyframes orbFloat5 {
+    0%, 100% { transform: translate(40%, 30%) scale(1); }
+    50% { transform: translate(60%, 50%) scale(1.2); }
+}
+
+// Grid Pattern
+.grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba($neon-cyan, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba($neon-cyan, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+// Floating Code Snippets
+.floating-snippets {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.snippet {
+    position: absolute;
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $neon-cyan;
+    opacity: 0.15;
+    white-space: nowrap;
+}
+
+.snippet-1 {
+    top: 20%;
+    left: 10%;
+    animation: floatSnippet 6s ease-in-out infinite;
+}
+
+.snippet-2 {
+    top: 30%;
+    right: 15%;
+    animation: floatSnippet 8s ease-in-out infinite 0.5s;
+}
+
+.snippet-3 {
+    bottom: 30%;
+    left: 15%;
+    animation: floatSnippet 7s ease-in-out infinite 1s;
+}
+
+.snippet-4 {
+    bottom: 25%;
+    right: 10%;
+    animation: floatSnippet 5s ease-in-out infinite 1.5s;
+}
+
+@keyframes floatSnippet {
+    0%, 100% { opacity: 0.1; transform: translateY(0); }
+    50% { opacity: 0.25; transform: translateY(-20px); }
+}
+
+// Hero Content
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid rgba($neon-cyan, 0.3);
+    background: rgba($neon-cyan, 0.05);
+    color: $neon-cyan;
+    font-family: $font-mono;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.6s ease-out 0.2s both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $neon-green;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.hero-title {
+    margin-bottom: 1.5rem;
+}
+
+.hero-title-line {
+    display: block;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: $color-text;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 0.6s ease-out 0.3s both;
+}
+
+.hero-title-name {
+    display: block;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, $neon-cyan, $neon-purple, $neon-pink);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite, fadeIn 0.6s ease-out 0.4s both;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+// Typing Effect
+.hero-typing {
+    font-family: $font-mono;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: $color-text-muted;
+    margin-bottom: 1.5rem;
+    height: 2rem;
+    animation: fadeIn 0.6s ease-out 0.5s both;
+}
+
+.typing-prompt {
+    color: $neon-cyan;
+    margin-right: 0.5rem;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background: $neon-cyan;
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.hero-description {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: $color-text-muted;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+    animation: fadeIn 0.6s ease-out 0.6s both;
+}
+
+// Hero Tags
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    animation: fadeIn 0.6s ease-out 0.7s both;
+}
+
+.hero-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: $color-text-muted;
+    transition: $transition-fast;
+    
+    &:hover {
+        border-color: rgba($neon-cyan, 0.5);
+        background: rgba($neon-cyan, 0.1);
+        color: $color-text;
+        transform: translateY(-2px);
+    }
+}
+
+.hero-tag-icon {
+    width: 1rem;
+    height: 1rem;
+    color: $neon-cyan;
+}
+
+// Hero Social
+.hero-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeIn 0.6s ease-out 0.8s both;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: $color-text-muted;
+    transition: $transition-fast;
+    
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    &:hover {
+        border-color: $neon-cyan;
+        color: $neon-cyan;
+        transform: translateY(-3px) rotate(5deg);
+    }
+}
+
+// Scroll Indicator
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-text-dim;
+    transition: $transition-fast;
+    animation: bounce 2s ease-in-out infinite;
+    
+    svg {
+        width: 32px;
+        height: 32px;
+    }
+    
+    &:hover {
+        color: $neon-cyan;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(10px); }
+}

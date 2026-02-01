@@ -1,0 +1,100 @@
+// ========================================
+// Facts Section
+// ========================================
+
+.facts {
+    position: relative;
+    background: linear-gradient(to bottom, transparent, rgba($neon-cyan, 0.02), transparent);
+}
+
+.facts-sparkles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: 
+        radial-gradient(circle, rgba($neon-cyan, 0.3) 1px, transparent 1px),
+        radial-gradient(circle, rgba($neon-purple, 0.3) 1px, transparent 1px);
+    background-size: 100px 100px, 150px 150px;
+    background-position: 0 0, 50px 50px;
+    opacity: 0.3;
+    animation: sparkle 20s linear infinite;
+}
+
+@keyframes sparkle {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    perspective: 1000px;
+}
+
+.fact-card {
+    height: 200px;
+    cursor: pointer;
+}
+
+.fact-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.fact-card:hover .fact-card-inner,
+.fact-card.flipped .fact-card-inner {
+    transform: rotateY(180deg);
+}
+
+.fact-front,
+.fact-back {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fact-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, rgba($neon-cyan, 0.1), rgba($neon-purple, 0.1));
+    border-color: rgba($neon-cyan, 0.2);
+}
+
+.fact-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fact-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $color-text;
+    margin-bottom: 0.5rem;
+}
+
+.fact-hint {
+    font-size: 0.875rem;
+    color: $color-text-dim;
+}
+
+.fact-description {
+    font-size: 0.9375rem;
+    color: $color-text;
+    line-height: 1.6;
+    
+    strong {
+        color: $neon-cyan;
+    }
+}

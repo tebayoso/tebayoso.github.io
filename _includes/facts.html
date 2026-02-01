@@ -1,0 +1,25 @@
+<section class="section facts" id="facts">
+    <div class="facts-sparkles"></div>
+    <div class="section-container">
+        {% include section-header.html tag="Discover" title="Things You Might Not" highlight="Know" tag_color="cyan"
+           subtitle="Beyond the code—quirks, achievements, and the human behind the keyboard." %}
+        
+        <div class="facts-grid">
+            {% for fact in site.facts %}
+            <div class="fact-card scroll-reveal">
+                <div class="fact-card-inner">
+                    <div class="fact-front">
+                        <div class="fact-icon">{{ fact.icon }}</div>
+                        <h3 class="fact-title">{{ fact.title }}</h3>
+                        <p class="fact-hint">Hover to discover</p>
+                    </div>
+                    
+                    <div class="fact-back">
+                        <p class="fact-description">{{ fact.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

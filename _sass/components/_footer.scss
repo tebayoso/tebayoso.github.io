@@ -1,0 +1,77 @@
+// ========================================
+// Footer
+// ========================================
+
+.footer {
+    padding: 3rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    font-family: $font-mono;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $neon-cyan;
+}
+
+.footer-tagline {
+    font-size: 0.875rem;
+    color: $color-text-muted;
+    margin-top: 0.5rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: $color-text-muted;
+    transition: $transition-fast;
+    
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    &:hover {
+        border-color: $neon-cyan;
+        color: $neon-cyan;
+        transform: translateY(-3px);
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    
+    p {
+        font-size: 0.875rem;
+        color: $color-text-dim;
+        margin-bottom: 0.5rem;
+    }
+}

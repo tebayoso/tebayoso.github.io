@@ -1,0 +1,52 @@
+// ========================================
+// Section Styles
+// ========================================
+
+.section {
+    position: relative;
+    padding: 6rem 1.5rem;
+    z-index: 1;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-tag {
+    display: inline-block;
+    font-family: $font-mono;
+    font-size: 0.875rem;
+    color: $neon-purple;
+    margin-bottom: 1rem;
+    
+    &-green {
+        color: $neon-green;
+    }
+    
+    &-pink {
+        color: $neon-pink;
+    }
+    
+    &-cyan {
+        color: $neon-cyan;
+    }
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: $color-text-muted;
+    max-width: 600px;
+    margin: 0 auto;
+}

@@ -1,0 +1,75 @@
+<section class="section journey" id="journey">
+    <div class="section-container">
+        {% include section-header.html tag="Journey" title="From" highlight="Hard Hats" 
+           extra="to" extra_highlight="Hard Drives" extra_class="text-gradient-orange"
+           subtitle="A decade-plus journey of continuous growth, ethical leadership, and technical excellence." %}
+        
+        <div class="timeline">
+            <div class="timeline-line">
+                <div class="timeline-progress"></div>
+            </div>
+            
+            {% for event in site.timeline_events %}
+            <div class="timeline-item scroll-reveal {% if event.current %}current{% endif %}" data-side="{{ event.side }}">
+                <div class="timeline-content">
+                    {% if event.current %}
+                    <div class="timeline-current-indicator">
+                        <span class="pulse"></span>
+                        <span>Current</span>
+                    </div>
+                    {% endif %}
+                    
+                    <span class="timeline-date timeline-date-{{ event.color }}">{{ event.date }}</span>
+                    <h3 class="timeline-title">{{ event.title }}</h3>
+                    <div class="timeline-role">{{ event.role }}</div>
+                    <p class="timeline-description">{{ event.description }}</p>
+                    
+                    {% if event.badge %}
+                    <div class="timeline-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span>{{ event.badge }}</span>
+                    </div>
+                    {% endif %}
+                    
+                    {% if event.stats %}
+                    <div class="timeline-stats">
+                        {% for stat in event.stats %}
+                        <span class="timeline-stat">{{ stat }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                
+                <div class="timeline-icon timeline-icon-{{ event.color }}">
+                    {% case event.icon %}
+                        {% when 'hardhat' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20M2 6h20M2 10h20M2 14h20M2 18h20"/></svg>
+                        {% when 'code' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        {% when 'building' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg>
+                        {% when 'rocket' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        {% when 'briefcase' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        {% when 'star' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    {% endcase %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="journey-summary scroll-reveal">
+            <div class="journey-summary-icon">🎓</div>
+            <h3 class="journey-summary-title">Continuous Learning</h3>
+            <p class="journey-summary-text">
+                Every role taught me something new. From construction's attention to structural integrity 
+                to blockchain's decentralization principles—each experience shapes how I architect solutions today.
+            </p>
+        </div>
+    </div>
+</section>
