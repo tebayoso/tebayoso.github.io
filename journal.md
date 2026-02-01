@@ -87,7 +87,7 @@ title: Journal
                             <h3 class="journal-title">MetaLab</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Software Architect</div>
+                        <div class="journal-role">Principal Solutions Architect (Mar 2025 - Oct 2025)</div>
                         <p class="journal-description">Product design agency work. Architected microservices-based systems, designed scalable data pipelines, and led technical discovery for high-profile clients including Outlive, Politico, and Proof of X protocol.</p>
                         <div class="journal-tags">
                             <span class="tag">Microservices</span>
@@ -96,7 +96,25 @@ title: Journal
                             <span class="tag">Node.js</span>
                             <span class="tag">Blockchain</span>
                         </div>
-                        <a href="/blog/2023/06/01/metalab-architect/" class="journal-link">Read full story →</a>
+                        <a href="/blog/2025/03/01/metalab-architect/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">Globant</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Technical Manager (Jul 2023 - Mar 2025)</div>
+                        <p class="journal-description">Technical leadership and team management for enterprise clients. Concurrent with Uttopion and Sharpei roles.</p>
+                        <div class="journal-achievement">🏆 Concurrent Role | Jul 2023 - Mar 2025</div>
+                        <div class="journal-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Architecture</span>
+                        </div>
                     </div>
                 </div>
 
@@ -107,7 +125,7 @@ title: Journal
                             <h3 class="journal-title">Certchain Limited</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Founding Engineer</div>
+                        <div class="journal-role">Founding Engineer (Mar 2023 - Aug 2023)</div>
                         <p class="journal-description">Built an EVM-compatible blockchain forked from Ethereum for digital identity and certification. Developed smart contracts in Solidity, React frontend, and Node.js backend infrastructure on AWS.</p>
                         <div class="journal-tags">
                             <span class="tag">Solidity</span>
@@ -180,7 +198,7 @@ title: Journal
                             <h3 class="journal-title">Dcycle</h3>
                             <span class="journal-type project">Project</span>
                         </div>
-                        <div class="journal-role">DevOps Engineer & Infrastructure Architect</div>
+                        <div class="journal-role">DevOps Engineer (2024-2025)</div>
                         <p class="journal-description">Web3 infrastructure and blockchain DevOps. Built scalable infrastructure for NFT marketplaces, DeFi protocols, and blockchain node operations.</p>
                         <div class="journal-tags">
                             <span class="tag">Web3</span>
@@ -206,8 +224,8 @@ title: Journal
                             <h3 class="journal-title">Uttopion</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">DevOps Consultant</div>
-                        <p class="journal-description">VR platform infrastructure based in Madrid, Spain. Built scalable backend systems, DevOps practices, and cloud infrastructure for VR content distribution platform.</p>
+                        <div class="journal-role">DevOps Consultant (Jun 2023 - Jan 2024)</div>
+                        <p class="journal-description">VR platform infrastructure based in Madrid, Spain. Built scalable backend systems, DevOps practices, and cloud infrastructure for VR content distribution platform. Concurrent with Globant role.</p>
                         <div class="journal-tags">
                             <span class="tag">VR</span>
                             <span class="tag">DevOps</span>
@@ -258,9 +276,9 @@ title: Journal
                             <h3 class="journal-title">Ipsy</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">DevOps Engineer (Concurrent with Michelin)</div>
+                        <div class="journal-role">DevOps Engineer (Mar 2019 - Mar 2021, Concurrent with Michelin)</div>
                         <p class="journal-description">Beauty subscription e-commerce platform based in San Francisco Bay Area. Managed AWS infrastructure, Kubernetes clusters, and CI/CD pipelines for millions of subscribers. Overlapped with Michelin role.</p>
-                        <div class="journal-achievement">🏆 Concurrent Role | San Francisco</div>
+                        <div class="journal-achievement">🏆 Concurrent Role: Mar 2019 - Mar 2021 | San Francisco</div>
                         <div class="journal-tags">
                             <span class="tag">DevOps</span>
                             <span class="tag">AWS</span>
@@ -278,8 +296,8 @@ title: Journal
                             <h3 class="journal-title">BFA (Beauty For All Industries)</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">DevOps Engineer</div>
-                        <p class="journal-description">Managed infrastructure supporting 40M concurrent users. Led PostgreSQL to MongoDB migration and built scalable DevOps pipelines for high-traffic beauty e-commerce platforms. Jan 2019 - Mar 2021.</p>
+                        <div class="journal-role">DevOps Engineer Consultant (Jan 2019 - Mar 2021)</div>
+                        <p class="journal-description">Managed infrastructure supporting 40M concurrent users. Led PostgreSQL to MongoDB migration and built scalable DevOps pipelines for high-traffic beauty e-commerce platforms. Concurrent with Michelin role.</p>
                         <div class="journal-achievement">🏆 40M Concurrent Users | DB Migration</div>
                         <div class="journal-tags">
                             <span class="tag">AWS</span>
@@ -306,7 +324,7 @@ title: Journal
                             <h3 class="journal-title">Euler Tools</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Startup Founder</div>
+                        <div class="journal-role">Founder/CTO (Jan 2021 - Apr 2023)</div>
                         <p class="journal-description">Founded a Web3 startup focused on blockchain data platforms. Developed decentralized applications, smart contracts, and DeFi integrations.</p>
                         <div class="journal-tags">
                             <span class="tag">Solidity</span>
@@ -332,7 +350,7 @@ title: Journal
                             <h3 class="journal-title">Sinequix</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Founder & CEO (Concurrent with Decisiv)</div>
+                        <div class="journal-role">Founder & CEO (Jan 2017 - Jul 2019, Concurrent with Decisiv)</div>
                         <p class="journal-description">Founded a staff augmentation and consulting company in Tandil, Argentina. Provided software development services to international clients while at Decisiv. Built and led a team of developers for remote consulting engagements.</p>
                         <div class="journal-achievement">🏆 Founder | Staff Augmentation | Tandil, Argentina</div>
                         <div class="journal-tags">
@@ -359,9 +377,9 @@ title: Journal
                             <h3 class="journal-title">Michelin North America</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Engineering Manager</div>
-                        <p class="journal-description">Led engineering teams in remote-first environment. Managed full-stack development, DevOps initiatives, and manufacturing digitalization projects. Started AFTER Decisiv — NOT an acquisition. Concurrent with Ipsy consulting work.</p>
-                        <div class="journal-achievement">🏆 Remote-First Leadership | Not an Acquisition</div>
+                        <div class="journal-role">Senior Software Engineering Manager (Sep 2018 - Dec 2020)</div>
+                        <p class="journal-description">Led engineering teams in remote-first environment. Managed full-stack development, DevOps initiatives, and manufacturing digitalization projects. Concurrent with Ipsy and BFA consulting work.</p>
+                        <div class="journal-achievement">🏆 Remote-First Leadership | Sep 2018 - Dec 2020</div>
                         <div class="journal-tags">
                             <span class="tag">AWS</span>
                             <span class="tag">Docker</span>
@@ -386,9 +404,9 @@ title: Journal
                             <h3 class="journal-title">Decisiv</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Lead Software Developer</div>
-                        <p class="journal-description">Led development at Decisiv, a fleet management software company in Washington/Richmond, USA. Built Decisiv Vision and Decisiv Builder platforms. Achieved 99% query optimization. NOT acquired by Michelin — that was incorrect information.</p>
-                        <div class="journal-achievement">🏆 Query: 8000ms → 70ms | NOT Acquired</div>
+                        <div class="journal-role">Lead Software Developer (May 2015 - Sep 2018)</div>
+                        <p class="journal-description">Led development at Decisiv, a fleet management software company in Washington/Richmond, USA. Built Decisiv Vision and Decisiv Builder platforms. Achieved 99% query optimization. Team grew from 5 to 26 engineers.</p>
+                        <div class="journal-achievement">🏆 Query: 8000ms → 70ms | Team Growth: 5→26 engineers</div>
                         <div class="journal-tags">
                             <span class="tag">Rails</span>
                             <span class="tag">JavaScript</span>
@@ -414,8 +432,8 @@ title: Journal
                             <h3 class="journal-title">Decisiv Vision</h3>
                             <span class="journal-type project">Project</span>
                         </div>
-                        <div class="journal-role">Senior Developer</div>
-                        <p class="journal-description">Transformed legacy fleet management system. 99% query optimization (8000ms → 70ms) and 15x scale improvement.</p>
+                        <div class="journal-role">Senior Developer (2015)</div>
+                        <p class="journal-description">Fleet management optimization project at Decisiv. 99% query optimization (8000ms → 70ms) and 15x scale improvement.</p>
                         <div class="journal-achievement">🏆 99% Performance | 800 → 12,000 RPM</div>
                         <div class="journal-tags">
                             <span class="tag">Rails</span>
@@ -433,8 +451,8 @@ title: Journal
                             <h3 class="journal-title">Globant</h3>
                             <span class="journal-type company">Company</span>
                         </div>
-                        <div class="journal-role">Semi-Senior Developer</div>
-                        <p class="journal-description">Tribune Corporation CMS serving millions. Received Annual Recognition for Ethical Action award.</p>
+                        <div class="journal-role">Software Developer (Oct 2013 - May 2015)</div>
+                        <p class="journal-description">Software Developer at Globant. Worked on projects for LPL, Apartments.com, Tribune Corporation CMS. Received Annual Recognition for Ethical Action award (2014).</p>
                         <div class="journal-achievement">🏆 Ethics Award 2014</div>
                         <div class="journal-tags">
                             <span class="tag">Rails</span>
