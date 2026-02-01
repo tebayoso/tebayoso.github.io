@@ -52,6 +52,51 @@ title: Journal
                         <a href="/blog/2023/01/01/motosierra-studio/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
+
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">MetaLab</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Software Architect</div>
+                        <p class="journal-description">Product design agency work. Architected microservices-based systems, designed scalable data pipelines, and led technical discovery for high-profile clients.</p>
+                        <div class="journal-tags">
+                            <span class="tag">Microservices</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <a href="/blog/2023/06/01/metalab-architect/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="journal-year scroll-reveal">
+            <div class="year-badge">2022</div>
+            
+            <div class="journal-items">
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">Ipsy</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Senior Software Engineer</div>
+                        <p class="journal-description">Beauty subscription commerce platform. Optimized subscription management, improved billing workflows, and built personalization algorithms for millions of subscribers.</p>
+                        <div class="journal-tags">
+                            <span class="tag">Rails</span>
+                            <span class="tag">React</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                        <a href="/blog/2022/03/01/ipsy-senior-engineer/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -64,15 +109,33 @@ title: Journal
                     <div class="journal-marker"></div>
                     <div class="journal-content">
                         <div class="journal-header-row">
+                            <h3 class="journal-title">Dcycle</h3>
+                            <span class="journal-type project">Project</span>
+                        </div>
+                        <div class="journal-role">Blockchain Consultant</div>
+                        <p class="journal-description">Blockchain consulting for Web3 companies. Built NFT marketplaces, integrated DeFi protocols, and advised on tokenomics for multiple projects.</p>
+                        <div class="journal-tags">
+                            <span class="tag">Solidity</span>
+                            <span class="tag">Web3.js</span>
+                            <span class="tag">NFT</span>
+                            <span class="tag">DeFi</span>
+                        </div>
+                        <a href="/blog/2021/01/01/dcycle-blockchain/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
                             <h3 class="journal-title">AWS Login Helper</h3>
                             <span class="journal-type">Project</span>
                         </div>
                         <div class="journal-role">Solo Developer</div>
-                        <p class="journal-description">DevOps CLI tool for managing multiple AWS profiles across different authentication methods. Built for consultants and large organizations with 1Password integration.</p>
+                        <p class="journal-description">DevOps CLI tool for managing multiple AWS profiles across authentication methods. Built for consultants with 1Password integration.</p>
                         <div class="journal-tags">
                             <span class="tag">Node.js</span>
                             <span class="tag">AWS SDK</span>
-                            <span class="tag">1Password</span>
                             <span class="tag">CLI</span>
                         </div>
                         <a href="/blog/2021/06/01/aws-login-helper/" class="journal-link">Read full story →</a>
@@ -81,7 +144,7 @@ title: Journal
             </div>
         </div>
 
-        <!-- 2020-2023 -->
+        <!-- 2020 -->
         <div class="journal-year scroll-reveal">
             <div class="year-badge">2020 — 2023</div>
             
@@ -94,15 +157,40 @@ title: Journal
                             <span class="journal-type company">Company</span>
                         </div>
                         <div class="journal-role">Startup Founder</div>
-                        <p class="journal-description">Founded a Web3 startup focused on blockchain data platforms. Developed decentralized applications, smart contracts, and DeFi integrations. Learned startup operations from the ground up.</p>
+                        <p class="journal-description">Founded a Web3 startup focused on blockchain data platforms. Developed decentralized applications, smart contracts, and DeFi integrations.</p>
                         <div class="journal-tags">
                             <span class="tag">Solidity</span>
                             <span class="tag">Web3.js</span>
-                            <span class="tag">Ethereum</span>
                             <span class="tag">React</span>
                             <span class="tag">Node.js</span>
                         </div>
                         <a href="/blog/2020/10/01/euler-tools-founder/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2019 -->
+        <div class="journal-year scroll-reveal">
+            <div class="year-badge">2019</div>
+            
+            <div class="journal-items">
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">Uttopion</h3>
+                            <span class="journal-type project">Project</span>
+                        </div>
+                        <div class="journal-role">Lead Developer</div>
+                        <p class="journal-description">Virtual reality platform development. Built backend infrastructure for VR content distribution, multiplayer features, and spatial audio systems.</p>
+                        <div class="journal-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">WebRTC</span>
+                            <span class="tag">VR</span>
+                        </div>
+                        <a href="/blog/2019/06/01/uttopion-vr/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
             </div>
@@ -121,15 +209,40 @@ title: Journal
                             <span class="journal-type company">Company</span>
                         </div>
                         <div class="journal-role">Engineering Manager</div>
-                        <p class="journal-description">Led engineering teams in remote-first environment before it became standard. Managed full-stack development, DevOps initiatives, and manufacturing digitalization projects. Established CI/CD pipelines and cloud infrastructure.</p>
+                        <p class="journal-description">Led engineering teams in remote-first environment. Managed full-stack development, DevOps initiatives, and manufacturing digitalization projects.</p>
                         <div class="journal-tags">
                             <span class="tag">AWS</span>
                             <span class="tag">Docker</span>
                             <span class="tag">Terraform</span>
                             <span class="tag">Leadership</span>
-                            <span class="tag">Remote</span>
                         </div>
                         <a href="/blog/2018/09/01/michelin-engineering-manager/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2016-2017 -->
+        <div class="journal-year scroll-reveal">
+            <div class="year-badge">2016 — 2017</div>
+            
+            <div class="journal-items">
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">Globant</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Senior Software Engineer</div>
+                        <p class="journal-description">Promoted to Senior Engineer. Led development teams on enterprise e-commerce projects, mentored junior developers, and architected scalable solutions for major clients.</p>
+                        <div class="journal-tags">
+                            <span class="tag">Rails</span>
+                            <span class="tag">React</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Mentoring</span>
+                        </div>
+                        <a href="/blog/2016/01/01/globant-senior-engineer/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
             </div>
@@ -148,13 +261,12 @@ title: Journal
                             <span class="journal-type project">Project</span>
                         </div>
                         <div class="journal-role">Senior Developer</div>
-                        <p class="journal-description">Transformed a legacy fleet management system into a high-performance platform. Achieved 99% query optimization (8000ms → 70ms) and 15x scale improvement. Built real-time notifications architecture.</p>
-                        <div class="journal-achievement">🏆 99% Performance Improvement | 800 → 12,000 RPM</div>
+                        <p class="journal-description">Transformed legacy fleet management system. 99% query optimization (8000ms → 70ms) and 15x scale improvement.</p>
+                        <div class="journal-achievement">🏆 99% Performance | 800 → 12,000 RPM</div>
                         <div class="journal-tags">
-                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">Rails</span>
                             <span class="tag">MySQL</span>
                             <span class="tag">PubNub</span>
-                            <span class="tag">Backbone.js</span>
                         </div>
                         <a href="/blog/2015/05/01/decisiv-vision/" class="journal-link">Read full story →</a>
                     </div>
@@ -168,13 +280,12 @@ title: Journal
                             <span class="journal-type company">Company</span>
                         </div>
                         <div class="journal-role">Semi-Senior Developer</div>
-                        <p class="journal-description">Worked on Tribune Corporation's CMS serving millions of users. Received the Annual Recognition for Ethical Action award.</p>
+                        <p class="journal-description">Tribune Corporation CMS serving millions. Received Annual Recognition for Ethical Action award.</p>
                         <div class="journal-achievement">🏆 Ethics Award 2014</div>
                         <div class="journal-tags">
-                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">Rails</span>
                             <span class="tag">PostgreSQL</span>
                             <span class="tag">Redis</span>
-                            <span class="tag">Sidekiq</span>
                         </div>
                         <a href="/blog/2015/04/01/globant-semi-senior-developer/" class="journal-link">Read full story →</a>
                     </div>
@@ -195,7 +306,7 @@ title: Journal
                             <span class="journal-type milestone">Milestone</span>
                         </div>
                         <div class="journal-role">Junior Developer</div>
-                        <p class="journal-description">Landed my first professional software engineering position. The journey from learning to earning began. Self-taught transition from construction to software development paying off.</p>
+                        <p class="journal-description">Landed first professional software engineering position. Self-taught transition from construction to software paying off.</p>
                         <div class="journal-tags">
                             <span class="tag">Ruby</span>
                             <span class="tag">Rails</span>
@@ -219,11 +330,10 @@ title: Journal
                             <span class="journal-type milestone">Milestone</span>
                         </div>
                         <div class="journal-role">Construction → Software</div>
-                        <p class="journal-description">Made the life-changing decision to transition from construction to software development. The foundation was laid for a new career. Applied the same principles: solid foundations, attention to detail, building things that last.</p>
+                        <p class="journal-description">Life-changing decision to transition from construction to software. Same principles: solid foundations, attention to detail, building things that last.</p>
                         <div class="journal-tags">
                             <span class="tag">Career Change</span>
                             <span class="tag">Self-Taught</span>
-                            <span class="tag">Determination</span>
                         </div>
                     </div>
                 </div>
