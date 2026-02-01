@@ -21,12 +21,18 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Posts
+permalink: /blog/:year/:month/:day/:title/
+
 # Collections
 collections:
   projects:
     output: false
   timeline:
     output: false
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
 
 # Sass
 sass:
