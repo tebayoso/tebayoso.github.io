@@ -28,11 +28,98 @@ title: Journal
             </blockquote>
         </div>
 
-        <!-- 2023-Present -->
+        <!-- 2025-Present -->
         <div class="journal-year scroll-reveal">
-            <div class="year-badge">2023 — Present</div>
+            <div class="year-badge">2025 — Present</div>
             
             <div class="journal-items">
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">DSTLRY Media</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Lead AI Engineer</div>
+                        <p class="journal-description">Leading AI initiatives across the entire product lifecycle—from product design to DevOps. Building AI tooling and infrastructure for next-generation media experiences.</p>
+                        <div class="journal-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">DevOps</span>
+                            <span class="tag">Product Design</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <a href="/blog/2025/10/01/dstlry-ai-engineer/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2023-2024 -->
+        <div class="journal-year scroll-reveal">
+            <div class="year-badge">2023 — 2024</div>
+            
+            <div class="journal-items">
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">Sharpei</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Lead Developer</div>
+                        <p class="journal-description">Led development of e-commerce solutions including PrestaShop plugin, Shopify app, and AWS infrastructure migration. Built scalable payment and subscription systems.</p>
+                        <div class="journal-tags">
+                            <span class="tag">PrestaShop</span>
+                            <span class="tag">Shopify</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <a href="/blog/2023/01/01/sharpei-lead-developer/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">MetaLab</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Software Architect</div>
+                        <p class="journal-description">Product design agency work. Architected microservices-based systems, designed scalable data pipelines, and led technical discovery for high-profile clients including Outlive, Politico, and Proof of X protocol.</p>
+                        <div class="journal-tags">
+                            <span class="tag">Microservices</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Blockchain</span>
+                        </div>
+                        <a href="/blog/2023/06/01/metalab-architect/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">Certchain Limited</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Founding Engineer</div>
+                        <p class="journal-description">Built an EVM-compatible blockchain forked from Ethereum for digital identity and certification. Developed smart contracts in Solidity, React frontend, and Node.js backend infrastructure on AWS.</p>
+                        <div class="journal-tags">
+                            <span class="tag">Solidity</span>
+                            <span class="tag">EVM</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                        <a href="/blog/2023/03/01/certchain-founding-engineer/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+
                 <div class="journal-item">
                     <div class="journal-marker"></div>
                     <div class="journal-content">
@@ -50,25 +137,6 @@ title: Journal
                             <span class="tag">SQLite</span>
                         </div>
                         <a href="/blog/2023/01/01/motosierra-studio/" class="journal-link">Read full story →</a>
-                    </div>
-                </div>
-
-                <div class="journal-item">
-                    <div class="journal-marker"></div>
-                    <div class="journal-content">
-                        <div class="journal-header-row">
-                            <h3 class="journal-title">MetaLab</h3>
-                            <span class="journal-type company">Company</span>
-                        </div>
-                        <div class="journal-role">Software Architect</div>
-                        <p class="journal-description">Product design agency work. Architected microservices-based systems, designed scalable data pipelines, and led technical discovery for high-profile clients.</p>
-                        <div class="journal-tags">
-                            <span class="tag">Microservices</span>
-                            <span class="tag">AWS</span>
-                            <span class="tag">Kafka</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                        <a href="/blog/2023/06/01/metalab-architect/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
             </div>
@@ -144,6 +212,34 @@ title: Journal
             </div>
         </div>
 
+        <!-- 2019-2021 -->
+        <div class="journal-year scroll-reveal">
+            <div class="year-badge">2019 — 2021</div>
+            
+            <div class="journal-items">
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">BFA (Beauty For All Industries)</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">DevOps Engineer</div>
+                        <p class="journal-description">Managed infrastructure supporting 40M concurrent users. Led PostgreSQL to MongoDB migration and built scalable DevOps pipelines for high-traffic beauty e-commerce platforms.</p>
+                        <div class="journal-achievement">🏆 40M Concurrent Users | DB Migration</div>
+                        <div class="journal-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">DevOps</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                        <a href="/blog/2019/01/01/bfa-devops-engineer/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- 2020 -->
         <div class="journal-year scroll-reveal">
             <div class="year-badge">2020 — 2023</div>
@@ -209,7 +305,7 @@ title: Journal
                             <span class="journal-type company">Company</span>
                         </div>
                         <div class="journal-role">Engineering Manager</div>
-                        <p class="journal-description">Led engineering teams in remote-first environment. Managed full-stack development, DevOps initiatives, and manufacturing digitalization projects.</p>
+                        <p class="journal-description">Led engineering teams in remote-first environment. Managed full-stack development, DevOps initiatives, and manufacturing digitalization projects. Team transitioned from AgilityFeat acquisition.</p>
                         <div class="journal-tags">
                             <span class="tag">AWS</span>
                             <span class="tag">Docker</span>
@@ -217,6 +313,34 @@ title: Journal
                             <span class="tag">Leadership</span>
                         </div>
                         <a href="/blog/2018/09/01/michelin-engineering-manager/" class="journal-link">Read full story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2015-2018 -->
+        <div class="journal-year scroll-reveal">
+            <div class="year-badge">2015 — 2018</div>
+            
+            <div class="journal-items">
+                <div class="journal-item">
+                    <div class="journal-marker"></div>
+                    <div class="journal-content">
+                        <div class="journal-header-row">
+                            <h3 class="journal-title">AgilityFeat</h3>
+                            <span class="journal-type company">Company</span>
+                        </div>
+                        <div class="journal-role">Lead Software Developer</div>
+                        <p class="journal-description">Grew engineering team from 5 to 26 developers. Led Decisiv projects and multiple enterprise initiatives. Company acquired by Michelin North America in 2018.</p>
+                        <div class="journal-achievement">🏆 Team Growth: 5 → 26 | Acquired by Michelin</div>
+                        <div class="journal-tags">
+                            <span class="tag">Rails</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Scaling</span>
+                        </div>
+                        <a href="/blog/2015/05/01/agilityfeat-lead-developer/" class="journal-link">Read full story →</a>
                     </div>
                 </div>
             </div>
@@ -235,11 +359,12 @@ title: Journal
                             <span class="journal-type company">Company</span>
                         </div>
                         <div class="journal-role">Senior Software Engineer</div>
-                        <p class="journal-description">Promoted to Senior Engineer. Led development teams on enterprise e-commerce projects, mentored junior developers, and architected scalable solutions for major clients.</p>
+                        <p class="journal-description">Promoted to Senior Engineer. Led development teams on enterprise projects including LPL Acquimerge by Atria, Apartments.com API, and Kafka data pipelines. Mentored junior developers.</p>
                         <div class="journal-tags">
                             <span class="tag">Rails</span>
                             <span class="tag">React</span>
                             <span class="tag">MongoDB</span>
+                            <span class="tag">Kafka</span>
                             <span class="tag">Mentoring</span>
                         </div>
                         <a href="/blog/2016/01/01/globant-senior-engineer/" class="journal-link">Read full story →</a>

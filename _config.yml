@@ -1,5 +1,5 @@
 title: "Jorge de los Santos"
-description: "Software Architect | Platform Engineer | Blockchain Developer | 15+ years turning complex problems into elegant solutions"
+description: "Software Architect | Platform Engineer | Blockchain Developer | 16+ years turning complex problems into elegant solutions"
 author: "Jorge de los Santos"
 email: ""
 url: "https://tebayoso.github.io"
@@ -74,6 +74,7 @@ skills_categories:
       - { name: "Ruby", level: 95, color: "#CC342D" }
       - { name: "TypeScript", level: 90, color: "#3178C6" }
       - { name: "Solidity", level: 85, color: "#363636" }
+      - { name: "Python", level: 82, color: "#3776AB" }
       - { name: "SQL", level: 88, color: "#F29111" }
   - name: "Backend"
     skills:
@@ -91,36 +92,106 @@ skills_categories:
       - { name: "Smart Contracts", level: 85, color: "#627EEA" }
       - { name: "Web3.js", level: 82, color: "#F16822" }
       - { name: "DeFi Protocols", level: 78, color: "#00D395" }
+      - { name: "EVM", level: 80, color: "#3C3C3D" }
   - name: "Cloud & DevOps"
     skills:
-      - { name: "AWS", level: 88, color: "#FF9900" }
-      - { name: "Digital Ocean", level: 85, color: "#0080FF" }
-      - { name: "Docker", level: 82, color: "#2496ED" }
+      - { name: "AWS", level: 90, color: "#FF9900" }
+      - { name: "Docker", level: 85, color: "#2496ED" }
+      - { name: "Kubernetes", level: 80, color: "#326CE5" }
+      - { name: "Terraform", level: 82, color: "#7B42BC" }
   - name: "Databases"
     skills:
       - { name: "PostgreSQL", level: 90, color: "#336791" }
+      - { name: "MongoDB", level: 85, color: "#47A248" }
       - { name: "MySQL", level: 88, color: "#4479A1" }
       - { name: "Redis", level: 80, color: "#DC382D" }
+      - { name: "Kafka", level: 82, color: "#231F20" }
 
 timeline_events:
-  - date: "Oct 2012"
-    title: "The Pivot"
-    role: "Construction → Software"
-    description: "Made the life-changing decision to transition from construction to software development."
-    icon: "hardhat"
-    color: "orange"
+  - date: "Oct 2025"
+    title: "DSTLRY Media"
+    role: "Lead AI Engineer"
+    description: "Leading AI initiatives from product design to DevOps. Building AI tooling for next-gen media experiences."
+    icon: "rocket"
+    color: "pink"
     side: "left"
-  - date: "Oct 2013"
-    title: "First Code Job"
-    role: "Junior Developer"
-    description: "Landed my first professional software engineering position."
-    icon: "code"
+    current: true
+    stats: ["AI/ML", "LLM Integration", "DevOps"]
+  - date: "2023-2024"
+    title: "Sharpei"
+    role: "Lead Developer"
+    description: "E-commerce solutions, PrestaShop plugin, Shopify app, AWS migration."
+    icon: "briefcase"
+    color: "cyan"
+    side: "right"
+    stats: ["PrestaShop", "Shopify", "AWS"]
+  - date: "2023"
+    title: "Certchain"
+    role: "Founding Engineer"
+    description: "Built EVM blockchain forked from Ethereum. Solidity, React, Node.js on AWS."
+    icon: "rocket"
+    color: "purple"
+    side: "left"
+    stats: ["EVM", "Solidity", "Blockchain"]
+  - date: "2023"
+    title: "MetaLab"
+    role: "Software Architect"
+    description: "Microservices, Kafka pipelines. Worked on Outlive, Politico, Proof of X protocol."
+    icon: "building"
     color: "blue"
     side: "right"
-  - date: "Apr 2015"
+    stats: ["Microservices", "Kafka", "AWS"]
+  - date: "2022"
+    title: "Ipsy"
+    role: "Senior Software Engineer"
+    description: "Beauty subscription e-commerce. Optimized subscription management for millions."
+    icon: "briefcase"
+    color: "yellow"
+    side: "left"
+  - date: "2019-2021"
+    title: "BFA"
+    role: "DevOps Engineer"
+    description: "40M concurrent users. PostgreSQL to MongoDB migration."
+    icon: "cloud"
+    color: "green"
+    side: "right"
+    badge: "40M Users"
+    stats: ["DB Migration", "40M Users", "Kubernetes"]
+  - date: "2020-2023"
+    title: "Euler Tools"
+    role: "Startup Founder"
+    description: "Web3 startup. Blockchain data platforms, DeFi integrations."
+    icon: "rocket"
+    color: "cyan"
+    side: "left"
+  - date: "2018-2020"
+    title: "Michelin NA"
+    role: "Engineering Manager"
+    description: "Led remote-first engineering teams. Manufacturing digitalization."
+    icon: "briefcase"
+    color: "yellow"
+    side: "right"
+  - date: "2015-2018"
+    title: "AgilityFeat"
+    role: "Lead Software Developer"
+    description: "Grew team from 5 to 26. Decisiv projects. Acquired by Michelin."
+    icon: "building"
+    color: "purple"
+    side: "left"
+    badge: "Acquired"
+    stats: ["5 → 26 Team", "Michelin"]
+  - date: "2016-2017"
+    title: "Globant"
+    role: "Senior Software Engineer"
+    description: "LPL Acquimerge, Apartments.com API, Kafka pipelines. Mentoring."
+    icon: "building"
+    color: "blue"
+    side: "right"
+    stats: ["LPL", "Apartments.com", "Kafka"]
+  - date: "2015"
     title: "Globant"
     role: "Semi-Senior Developer"
-    description: "Joined Globant and received the Annual Recognition for Ethical Action."
+    description: "Tribune CMS, millions of users. Ethics Award recipient."
     icon: "building"
     color: "purple"
     side: "left"
@@ -128,35 +199,54 @@ timeline_events:
   - date: "May 2015"
     title: "Decisiv Vision"
     role: "Senior Developer"
-    description: "Built real-time notifications architecture. Reduced queries from 8000ms to 70ms."
+    description: "Fleet management optimization. 99% query improvement."
     icon: "rocket"
     color: "green"
     side: "right"
     stats: ["Query: 8000ms → 70ms", "12,000 RPM scale", "40% cost reduction"]
-  - date: "Sep 2018"
-    title: "Michelin NA"
-    role: "Engineering Manager"
-    description: "Led engineering teams at Michelin North America."
-    icon: "briefcase"
-    color: "yellow"
+  - date: "Oct 2012"
+    title: "The Pivot"
+    role: "Construction → Software"
+    description: "Made the life-changing decision to transition from construction to software development."
+    icon: "hardhat"
+    color: "orange"
     side: "left"
-  - date: "2020"
-    title: "Euler Tools"
-    role: "Startup Founder"
-    description: "Founded Euler Tools, diving deep into Web3 and blockchain."
-    icon: "rocket"
-    color: "cyan"
-    side: "right"
-  - date: "2023-Present"
-    title: "Motosierra Studio"
-    role: "Founder & Lead Architect"
-    description: "Building Discord Game Builder with AI assistance."
-    icon: "star"
-    color: "pink"
-    side: "left"
-    current: true
 
 projects:
+  - title: "DSTLRY Media"
+    subtitle: "AI-Powered Media Platform"
+    description: "Leading AI engineering initiatives from product design to DevOps. Building next-generation media experiences with AI tooling."
+    icon: "star"
+    color: "pink"
+    tags: ["AI/ML", "LLM", "Python", "DevOps", "AWS"]
+    featured: true
+  - title: "Sharpei"
+    subtitle: "E-commerce Solutions"
+    description: "PrestaShop plugin, Shopify app development, and AWS infrastructure migration for scalable e-commerce."
+    icon: "briefcase"
+    color: "cyan"
+    tags: ["PrestaShop", "Shopify", "AWS", "PHP", "Node.js"]
+  - title: "Certchain Limited"
+    subtitle: "EVM Blockchain Platform"
+    description: "Founding engineer for EVM-compatible blockchain forked from Ethereum. Digital identity and certification platform."
+    icon: "database"
+    color: "purple"
+    tags: ["Solidity", "EVM", "React", "Node.js", "AWS"]
+  - title: "MetaLab Projects"
+    subtitle: "Outlive, Politico, Proof of X"
+    description: "Software architecture for multiple high-profile clients including Outlive backend, Politico platform, and Proof of X digital identity protocol."
+    icon: "building"
+    color: "blue"
+    tags: ["Microservices", "Kafka", "AWS", "Node.js", "Blockchain"]
+  - title: "BFA Infrastructure"
+    subtitle: "40M Users Platform"
+    description: "DevOps engineering supporting 40M concurrent users. PostgreSQL to MongoDB migration and scalable infrastructure."
+    icon: "cloud"
+    color: "green"
+    tags: ["AWS", "MongoDB", "PostgreSQL", "Kubernetes", "DevOps"]
+    stats:
+      - { label: "Concurrent Users", value: "40M" }
+      - { label: "DB Migration", value: "Complete" }
   - title: "Motosierra Studio"
     subtitle: "Discord Game Builder"
     description: "A Discord-based collaborative game development platform with AI assistance."
@@ -187,14 +277,14 @@ projects:
       - { label: "Query Time", value: "-99%" }
       - { label: "Scale", value: "15x" }
     demo: "https://decisiv.com"
-  - title: "Tribune P2P CMS"
-    subtitle: "Content Management System"
-    description: "Software maintenance and feature development for Tribune Corporation."
-    icon: "database"
+  - title: "Globant Enterprise"
+    subtitle: "LPL, Apartments.com, Tribune"
+    description: "Multiple enterprise projects including LPL Acquimerge by Atria, Apartments.com API, and Kafka data pipelines."
+    icon: "building"
     color: "purple"
-    tags: ["Ruby on Rails", "PostgreSQL", "Redis", "Sidekiq"]
+    tags: ["Ruby on Rails", "React", "MongoDB", "PostgreSQL", "Kafka"]
     stats:
-      - { label: "Uptime", value: "99.9%" }
+      - { label: "Projects", value: "10+" }
       - { label: "Users", value: "Millions" }
 
 facts:
@@ -216,6 +306,12 @@ facts:
   - icon: "🌐"
     title: "Remote-First Pioneer"
     description: "Led remote teams at <strong>Michelin North America</strong> years before it became standard."
+  - icon: "🤖"
+    title: "AI Engineering Lead"
+    description: "Leading <strong>AI initiatives</strong> at DSTLRY Media from product design to DevOps."
+  - icon: "⛓️"
+    title: "Blockchain Architect"
+    description: "Built <strong>Certchain</strong>—an EVM blockchain forked from Ethereum for digital identity."
 
 challenges:
   - icon: "⚡"
@@ -223,16 +319,16 @@ challenges:
     description: "Expert at identifying bottlenecks and implementing elegant solutions."
   - icon: "🏗️"
     title: "System Architecture"
-    description: "Designed scalable systems handling 12,000+ RPM. Architect for growth."
+    description: "Designed scalable systems handling 12,000+ RPM and 40M concurrent users."
   - icon: "🚀"
     title: "Team Leadership"
-    description: "Led engineering teams at Michelin and startups. Servant leadership approach."
+    description: "Grew teams from 5 to 26 developers. Led engineering at Michelin and startups."
   - icon: "⛓️"
     title: "Web3 Integration"
     description: "Bridging traditional web apps with blockchain and smart contracts."
   - icon: "🔧"
     title: "Legacy Modernization"
-    description: "Turning technical debt into technical assets. Upgraded Ruby 1.9 to 2.3."
+    description: "Turning technical debt into technical assets. DB migrations, upgrades."
   - icon: "🤖"
-    title: "AI-Powered Tools"
-    description: "Leveraging modern AI for developer productivity and automation."
+    title: "AI-Powered Engineering"
+    description: "Building AI tooling and LLM integrations for next-gen applications."
