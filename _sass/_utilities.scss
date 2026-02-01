@@ -1,0 +1,50 @@
+// ========================================
+// Utilities
+// ========================================
+
+.text-gradient-cyan {
+    background: $gradient-cyan;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-purple {
+    background: $gradient-purple;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-green {
+    background: $gradient-green;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-pink {
+    background: $gradient-purple;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-orange {
+    background: $gradient-orange;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+// Scroll reveal
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    
+    &.revealed {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

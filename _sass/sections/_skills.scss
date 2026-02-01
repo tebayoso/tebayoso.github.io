@@ -1,0 +1,173 @@
+// ========================================
+// Skills Section
+// ========================================
+
+.skills {
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 25%;
+        left: 0;
+        width: 400px;
+        height: 400px;
+        background: rgba($neon-cyan, 0.03);
+        border-radius: 50%;
+        filter: blur(100px);
+        pointer-events: none;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 25%;
+        right: 0;
+        width: 400px;
+        height: 400px;
+        background: rgba($neon-purple, 0.03);
+        border-radius: 50%;
+        filter: blur(100px);
+        pointer-events: none;
+    }
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    transition: $transition-medium;
+    
+    &:hover {
+        border-color: rgba($neon-cyan, 0.2);
+        box-shadow: 0 0 30px rgba($neon-cyan, 0.1);
+    }
+}
+
+.skill-category-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $color-text;
+}
+
+.skill-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $neon-cyan;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $color-text-muted;
+}
+
+.skill-level {
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $color-text-dim;
+}
+
+.skill-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 3px;
+    background: var(--skill-color, $neon-cyan);
+    width: 0%;
+    transition: width 1s ease-out;
+    position: relative;
+    overflow: hidden;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        animation: shimmer-bar 2s linear infinite;
+    }
+}
+
+@keyframes shimmer-bar {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+// Challenges Grid
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.challenge-card {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), transparent);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    transition: $transition-medium;
+    
+    &:hover {
+        transform: translateY(-5px);
+        border-color: rgba($neon-cyan, 0.2);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        
+        .challenge-icon {
+            transform: scale(1.2) rotate(10deg);
+        }
+    }
+}
+
+.challenge-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: $transition-fast;
+}
+
+.challenge-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: $color-text;
+}
+
+.challenge-description {
+    font-size: 0.9375rem;
+    color: $color-text-muted;
+    line-height: 1.6;
+}

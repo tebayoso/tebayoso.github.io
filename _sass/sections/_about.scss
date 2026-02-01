@@ -1,0 +1,101 @@
+// ========================================
+// About Section
+// ========================================
+
+.about {
+    background: linear-gradient(to bottom, transparent, rgba($neon-cyan, 0.02), transparent);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.about-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    transition: $transition-medium;
+    
+    &:hover {
+        border-color: rgba($neon-cyan, 0.2);
+        background: rgba($neon-cyan, 0.05);
+        transform: translateY(-5px);
+    }
+}
+
+.about-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: $color-text;
+}
+
+.about-card-text {
+    color: $color-text-muted;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+}
+
+// About Stats
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    transition: $transition-fast;
+    
+    &:hover {
+        border-color: rgba($neon-cyan, 0.3);
+        transform: translateY(-3px);
+    }
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: $gradient-cyan;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: $color-text-muted;
+}
+
+// About Quote
+.about-quote {
+    text-align: center;
+    padding: 3rem;
+    border-left: 3px solid $neon-cyan;
+    background: rgba($neon-cyan, 0.03);
+    border-radius: 0 1rem 1rem 0;
+    
+    p {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: $color-text-muted;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,15 @@
+{% assign tag = include.tag | default: "Section" %}
+{% assign title = include.title | default: "Title" %}
+{% assign highlight = include.highlight %}
+{% assign subtitle = include.subtitle %}
+{% assign tag_color = include.tag_color | default: "purple" %}
+
+<div class="section-header scroll-reveal">
+    <span class="section-tag {% if tag_color %}section-tag-{{ tag_color }}{% endif %}">&lt;{{ tag }} /&gt;</span>
+    <h2 class="section-title">
+        {{ title }}{% if highlight %} <span class="{% if tag_color == 'green' %}text-gradient-green{% elsif tag_color == 'pink' %}text-gradient-pink{% elsif tag_color == 'cyan' %}text-gradient-cyan{% else %}text-gradient-purple{% endif %}">{{ highlight }}</span>{% endif %}
+    </h2>
+    {% if subtitle %}
+    <p class="section-subtitle">{{ subtitle }}</p>
+    {% endif %}
+</div>
